@@ -119,8 +119,9 @@
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Screen1",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Pong",
               "Type": "ActionGotoScreen"
             }
           },
@@ -569,6 +570,237 @@
         "Name": "Screen3",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "background",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 247,
+              "Green": 214,
+              "Blue": 0
+            },
+            "CenterX": 40,
+            "CenterY": 40,
+            "Radius": 20,
+            "LineWidth": 0,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "ball",
+            "X": 200,
+            "Y": 96,
+            "Width": 80,
+            "Height": 80,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 6,
+              "Green": 128,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "paddle1",
+            "X": 173,
+            "Y": 212,
+            "Width": 134,
+            "Height": 17,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId22",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "back_button",
+            "X": 0,
+            "Y": 0,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 1000,
+            "Name": "left_button",
+            "X": 346,
+            "Y": 199,
+            "Width": 60,
+            "Height": 60,
+            "Type": "RepeatButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 1000,
+            "Name": "right_button",
+            "X": 420,
+            "Y": 199,
+            "Width": 60,
+            "Height": 60,
+            "Type": "RepeatButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId23",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 442,
+            "Y": 217,
+            "Width": 16,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId24",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1_1",
+            "X": 368,
+            "Y": 217,
+            "Width": 16,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "back_to_main_screen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "back_button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "screen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "ball_movement",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode"
+            }
+          },
+          {
+            "InteractionName": "move_left",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "left_button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "move_left",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "move_right",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "right_button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "move_right",
+              "Type": "ActionCustom"
+            }
+          }
+        ],
+        "Name": "Pong",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 7200
       }
     ],
     "CustomContainerDefinitions": [],
@@ -627,6 +859,18 @@
       },
       {
         "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
         "IsResource": false
       }
     ],

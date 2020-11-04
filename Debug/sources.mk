@@ -45,6 +45,7 @@ STM32746G-Discovery \
 TouchGFX/App \
 TouchGFX/generated/fonts/src \
 TouchGFX/generated/gui_generated/src/common \
+TouchGFX/generated/gui_generated/src/pong_screen \
 TouchGFX/generated/gui_generated/src/screen1_screen \
 TouchGFX/generated/gui_generated/src/screen2_screen \
 TouchGFX/generated/gui_generated/src/screen3_screen \
@@ -54,6 +55,7 @@ TouchGFX/generated/images/src/__designer \
 TouchGFX/generated/texts/src \
 TouchGFX/gui/src/common \
 TouchGFX/gui/src/model \
+TouchGFX/gui/src/pong_screen \
 TouchGFX/gui/src/screen1_screen \
 TouchGFX/gui/src/screen2_screen \
 TouchGFX/gui/src/screen3_screen \

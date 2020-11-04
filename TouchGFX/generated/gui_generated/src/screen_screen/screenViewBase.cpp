@@ -50,9 +50,9 @@ void screenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     if (&src == &buttonWithLabel1)
     {
         //Interaction1
-        //When buttonWithLabel1 clicked change screen to Screen1
-        //Go to Screen1 with no screen transition
-        application().gotoScreen1ScreenNoTransition();
+        //When buttonWithLabel1 clicked change screen to Pong
+        //Go to Pong with screen transition towards East
+        application().gotoPongScreenCoverTransitionEast();
     }
     else if (&src == &buttonWithLabel2)
     {

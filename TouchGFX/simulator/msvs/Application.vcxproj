@@ -32,6 +32,9 @@
     <ClCompile Include="..\..\gui\src\screen3_screen\Screen3Presenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen3_screen\Screen3View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen3_screen\Screen3ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\pong_screen\PongPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\pong_screen\PongView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\pong_screen\PongViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -191,6 +194,9 @@
     <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3Presenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen3_screen\Screen3ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\pong_screen\PongPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\pong_screen\PongView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\pong_screen\PongViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

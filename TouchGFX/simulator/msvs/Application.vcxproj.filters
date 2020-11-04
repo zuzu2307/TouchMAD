@@ -208,6 +208,18 @@
     <Filter Include="Header Files\generated\gui_generated\screen2_screen">
       <UniqueIdentifier>4487B0DF-34BF-C97D-5F4C-453474017749</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\pong_screen">
+      <UniqueIdentifier>C5E68FC9-597C-0A29-A7EA-4602B74E3D35</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\pong_screen">
+      <UniqueIdentifier>49DCD1C4-3582-6690-35C6-B8A36DBF9B21</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\pong_screen">
+      <UniqueIdentifier>CA4603E9-67A7-A7FB-C3FF-A688BC68AD78</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\pong_screen">
+      <UniqueIdentifier>317EBBBE-A27C-B0C9-C47A-27EB28566C2D</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -272,6 +284,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen3_screen\Screen3ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen3_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\pong_screen\PongPresenter.cpp">
+      <Filter>Source Files\gui\pong_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\pong_screen\PongView.cpp">
+      <Filter>Source Files\gui\pong_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\pong_screen\PongViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\pong_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -741,6 +762,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen3_screen\Screen3ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen3_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\pong_screen\PongPresenter.hpp">
+      <Filter>Header Files\gui\pong_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\pong_screen\PongView.hpp">
+      <Filter>Header Files\gui\pong_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\pong_screen\PongViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\pong_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
