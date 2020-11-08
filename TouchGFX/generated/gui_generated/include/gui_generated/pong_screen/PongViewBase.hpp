@@ -11,8 +11,10 @@
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB888.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
-#include <touchgfx/widgets/RepeatButton.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/mixins/Draggable.hpp>
+#include <touchgfx/EasingEquations.hpp>
+#include <touchgfx/mixins/MoveAnimator.hpp>
 
 class PongViewBase : public touchgfx::View<PongPresenter>
 {
@@ -20,19 +22,6 @@ public:
     PongViewBase();
     virtual ~PongViewBase() {}
     virtual void setupScreen();
-
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void move_left()
-    {
-        // Override and implement this function in Pong
-    }
-
-    virtual void move_right()
-    {
-        // Override and implement this function in Pong
-    }
 
 protected:
     FrontendApplication& application() {
@@ -43,12 +32,10 @@ protected:
      * Member Declarations
      */
     touchgfx::Box background;
-    touchgfx::Circle ball;
+    touchgfx::MoveAnimator< touchgfx::Circle > ball;
     touchgfx::PainterRGB888 ballPainter;
-    touchgfx::Box paddle1;
+    touchgfx::Draggable< touchgfx::Box > paddle1;
     touchgfx::ButtonWithLabel back_button;
-    touchgfx::RepeatButton left_button;
-    touchgfx::RepeatButton right_button;
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea1_1;
 

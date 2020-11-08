@@ -99,7 +99,8 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
  ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RepeatButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f746xx.h \
@@ -349,7 +350,9 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 
 ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RepeatButton.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:
 

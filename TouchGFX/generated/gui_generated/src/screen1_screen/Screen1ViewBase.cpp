@@ -16,7 +16,7 @@ Screen1ViewBase::Screen1ViewBase() :
 
     buttonWithLabel1.setXY(0, 212);
     buttonWithLabel1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
-    buttonWithLabel1.setLabelText(touchgfx::TypedText(T_SINGLEUSEID15));
+    buttonWithLabel1.setLabelText(touchgfx::TypedText(T_SINGLEUSEID26));
     buttonWithLabel1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     buttonWithLabel1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     buttonWithLabel1.setAction(buttonCallback);

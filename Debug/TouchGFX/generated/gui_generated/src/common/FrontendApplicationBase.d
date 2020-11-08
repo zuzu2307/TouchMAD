@@ -97,7 +97,8 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
  ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RepeatButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp
 
@@ -295,7 +296,9 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 
 ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RepeatButton.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
 ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
 

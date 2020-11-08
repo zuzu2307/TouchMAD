@@ -99,7 +99,8 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
  ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RepeatButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  ../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp \
@@ -355,7 +356,9 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 
 ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RepeatButton.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
 ../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

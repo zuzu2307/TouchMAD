@@ -178,7 +178,7 @@
             "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
             "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
             "Alpha": 255,
-            "TextId": "SingleUseId15",
+            "TextId": "SingleUseId26",
             "ReleasedColor": {
               "Red": 255,
               "Green": 255,
@@ -594,9 +594,9 @@
           },
           {
             "Color": {
-              "Red": 247,
-              "Green": 214,
-              "Blue": 0
+              "Red": 6,
+              "Green": 128,
+              "Blue": 255
             },
             "CenterX": 40,
             "CenterY": 40,
@@ -608,7 +608,7 @@
             "Alpha": 255,
             "Name": "ball",
             "X": 200,
-            "Y": 96,
+            "Y": 85,
             "Width": 80,
             "Height": 80,
             "Type": "Circle",
@@ -616,7 +616,7 @@
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
-            "Moveable": false
+            "Moveable": true
           },
           {
             "Color": {
@@ -627,12 +627,12 @@
             "Alpha": 255,
             "Name": "paddle1",
             "X": 173,
-            "Y": 212,
+            "Y": 194,
             "Width": 134,
             "Height": 17,
             "Type": "Box",
             "Visible": true,
-            "Draggable": false,
+            "Draggable": true,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
@@ -666,42 +666,6 @@
             "Moveable": false
           },
           {
-            "Pressed": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Alpha": 255,
-            "Delay": 200,
-            "Interval": 1000,
-            "Name": "left_button",
-            "X": 346,
-            "Y": 199,
-            "Width": 60,
-            "Height": 60,
-            "Type": "RepeatButton",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Alpha": 255,
-            "Delay": 200,
-            "Interval": 1000,
-            "Name": "right_button",
-            "X": 420,
-            "Y": 199,
-            "Width": 60,
-            "Height": 60,
-            "Type": "RepeatButton",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "TextId": "SingleUseId23",
             "TextRotation": "0",
             "Color": {
@@ -714,7 +678,7 @@
             "LineSpacing": 0,
             "Name": "textArea1",
             "X": 442,
-            "Y": 217,
+            "Y": 230,
             "Width": 16,
             "Height": 25,
             "Type": "TextArea",
@@ -736,8 +700,8 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea1_1",
-            "X": 368,
-            "Y": 217,
+            "X": 22,
+            "Y": 229,
             "Width": 16,
             "Height": 25,
             "Type": "TextArea",
@@ -767,17 +731,17 @@
             "InteractionName": "ball_movement",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerScreenEntered"
+              "Type": "TriggerClicked"
             },
             "Action": {
-              "Type": "ActionExecuteCode"
+              "FunctionName": "move_ball",
+              "Type": "ActionCustom"
             }
           },
           {
             "InteractionName": "move_left",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "left_button",
               "Type": "TriggerClicked"
             },
             "Action": {
@@ -789,7 +753,6 @@
             "InteractionName": "move_right",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "right_button",
               "Type": "TriggerClicked"
             },
             "Action": {
@@ -834,10 +797,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId15",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId16",
         "IsResource": false
       },
@@ -871,6 +830,14 @@
       },
       {
         "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId26",
         "IsResource": false
       }
     ],
