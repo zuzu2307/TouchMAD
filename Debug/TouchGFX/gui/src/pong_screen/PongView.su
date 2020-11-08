@@ -5,6 +5,7 @@ Drawable.hpp:64:13:virtual touchgfx::Drawable::~Drawable()	16	static
 Drawable.hpp:207:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
 Drawable.hpp:219:13:int16_t touchgfx::Drawable::getX() const	16	static
 Drawable.hpp:229:13:int16_t touchgfx::Drawable::getY() const	16	static
+Drawable.hpp:239:13:int16_t touchgfx::Drawable::getWidth() const	16	static
 Drawable.hpp:249:13:int16_t touchgfx::Drawable::getHeight() const	16	static
 Drawable.hpp:261:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
 Drawable.hpp:273:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
@@ -61,7 +62,7 @@ PongView.cpp:20:6:virtual void PongView::move_left()	24	static
 PongView.cpp:30:6:virtual void PongView::move_right()	24	static
 PongView.cpp:40:6:virtual void PongView::handleTickEvent()	16	static
 PongView.cpp:44:6:void PongView::move_ball()	24	static
-PongView.cpp:63:5:int PongView::check_collision()	24	static
+PongView.cpp:64:5:int PongView::check_collision()	24	static
 Container.hpp:42:7:touchgfx::Container::~Container()	16	static
 Container.hpp:42:7:virtual touchgfx::Container::~Container()	16	static
 Box.hpp:36:7:touchgfx::Box::~Box()	16	static

@@ -20,7 +20,7 @@ protected:
 private:
     int ball_vertical_direction = 1; // 0 down 1 up
     int ball_horizontal_direction = 0; // 0 mid 1 left 2 right
-    int ball_speed = 2;
+    int ball_speed = 4;
     int margin = 40;
 };
 
