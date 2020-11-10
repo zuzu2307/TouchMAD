@@ -23,7 +23,7 @@ PongViewBase::PongViewBase() :
     ballPainter.setColor(touchgfx::Color::getColorFrom24BitRGB(6, 128, 255));
     ball.setPainter(ballPainter);
 
-    paddle1.setPosition(173, 194, 134, 17);
+    paddle1.setPosition(173, 182, 134, 29);
     paddle1.setColor(touchgfx::Color::getColorFrom24BitRGB(6, 128, 255));
 
     back_button.setXY(0, 0);

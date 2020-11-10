@@ -38,6 +38,7 @@ void PongView::move_right(){
 }
 
 void PongView::handleTickEvent(){
+	tick ++;
 	move_ball();
 }
 
@@ -47,6 +48,7 @@ void PongView::move_ball(){\
 	ballPainter.setColor( touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
 	ball.invalidate();
 	ball.setY(ball.getY() +  ball_vertical_direction*ball_speed);
+	ball.setX(ball.getX() +  ball_horizontal_direction*ball_speed);
 	ballPainter.setColor( touchgfx::Color::getColorFrom24BitRGB(6, 128, 255));
 	ball.invalidate();
 
@@ -57,6 +59,18 @@ void PongView::move_ball(){\
 	else if(check_collision()==2){
 		ball_vertical_direction = 1;
 	}
+
+
+// change direction horizontal
+	if(check_moving()==1 && check_collision()==1){
+		ball_horizontal_direction = 1;
+	}
+	else if (check_moving()==2 && check_collision()==1){
+		ball_horizontal_direction = -1;
+	}
+
+
+
 
 
 }
@@ -73,4 +87,24 @@ int PongView::check_collision(){
 	}
 
 	return 0;
+}
+
+int PongView::check_moving(){
+
+	if(tick>5){
+		if(paddle1.getX() - pos > 0){
+			return 1;
+		}
+		else if(paddle1.getX() - pos < 0){
+			return 2;
+		}
+		tick = 0;
+	}
+	else{
+		pos = paddle1.getX();
+	}
+
+	return 0;
+
+
 }
