@@ -40,7 +40,10 @@ void PongView::move_right(){
 void PongView::handleTickEvent(){
 	tick ++;
 	move_ball();
-	updateTxt(10);
+	sc ++;
+	Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%d", sc);
+	score.invalidate();
+
 }
 
 void PongView::move_ball(){\
@@ -120,7 +123,3 @@ int PongView::check_moving(){
 
 }
 
-void PongView::updateTxt(int newValue){
-	Unicode::snprintf(scoreBuffer, 10, "hello %d", newValue);
-	score.invalidate();
-}

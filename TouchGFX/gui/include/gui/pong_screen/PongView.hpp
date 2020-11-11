@@ -26,7 +26,7 @@ private:
     int margin = 40;
     int tick = 0;
     int pos;
-
+    int sc = 0;
 
 };
 

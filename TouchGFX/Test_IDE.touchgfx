@@ -677,13 +677,14 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Wildcard1": {
+              "TextId": "SingleUseId29",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 20
             },
             "Name": "score",
             "X": 299,
             "Y": 0,
-            "Width": 57,
+            "Width": 102,
             "Height": 25,
             "Type": "TextArea",
             "Visible": true,
@@ -815,6 +816,10 @@
       },
       {
         "TextEntryId": "SingleUseId28",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId29",
         "IsResource": false
       }
     ],

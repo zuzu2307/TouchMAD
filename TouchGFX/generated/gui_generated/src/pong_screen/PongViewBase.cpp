@@ -36,7 +36,7 @@ PongViewBase::PongViewBase() :
     score.setXY(299, 0);
     score.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 173, 173));
     score.setLinespacing(0);
-    scoreBuffer[0] = 0;
+    Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID29).getText());
     score.setWildcard(scoreBuffer);
     score.resizeToCurrentText();
     score.setTypedText(touchgfx::TypedText(T_SINGLEUSEID28));

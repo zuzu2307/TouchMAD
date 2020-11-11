@@ -63,10 +63,9 @@ PongView.cpp:15:6:virtual void PongView::tearDownScreen()	16	static
 PongView.cpp:20:6:virtual void PongView::move_left()	24	static
 PongView.cpp:30:6:virtual void PongView::move_right()	24	static
 PongView.cpp:40:6:virtual void PongView::handleTickEvent()	16	static
-PongView.cpp:46:6:void PongView::move_ball()	24	static
-PongView.cpp:80:5:int PongView::check_collision()	24	static
-PongView.cpp:104:5:int PongView::check_moving()	16	static
-PongView.cpp:123:6:void PongView::updateTxt(int)	16	static
+PongView.cpp:49:6:void PongView::move_ball()	24	static
+PongView.cpp:83:5:int PongView::check_collision()	24	static
+PongView.cpp:107:5:int PongView::check_moving()	16	static
 Container.hpp:42:7:touchgfx::Container::~Container()	16	static
 Container.hpp:42:7:virtual touchgfx::Container::~Container()	16	static
 Box.hpp:36:7:touchgfx::Box::~Box()	16	static

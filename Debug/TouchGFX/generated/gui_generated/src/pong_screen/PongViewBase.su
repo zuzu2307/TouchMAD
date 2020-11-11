@@ -76,7 +76,7 @@ View.hpp:40:7:virtual touchgfx::View<PongPresenter>::~View()	16	static
 PongViewBase.hpp:23:13:PongViewBase::~PongViewBase()	16	static
 PongViewBase.hpp:23:13:virtual PongViewBase::~PongViewBase()	16	static
 PongViewBase.hpp:27:26:FrontendApplication& PongViewBase::application()	16	static
-PongViewBase.cpp:9:1:PongViewBase::PongViewBase()	88	static
+PongViewBase.cpp:9:1:PongViewBase::PongViewBase()	96	static
 PongViewBase.cpp:51:6:virtual void PongViewBase::setupScreen()	16	static
 PongViewBase.cpp:56:6:void PongViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 Circle.hpp:106:10:void touchgfx::Circle::setCenter(T, T) [with T = int]	40	static
