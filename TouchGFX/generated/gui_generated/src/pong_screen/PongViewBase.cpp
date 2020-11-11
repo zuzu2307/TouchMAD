@@ -23,7 +23,7 @@ PongViewBase::PongViewBase() :
     ballPainter.setColor(touchgfx::Color::getColorFrom24BitRGB(6, 128, 255));
     ball.setPainter(ballPainter);
 
-    paddle1.setPosition(173, 182, 134, 29);
+    paddle1.setPosition(66, 212, 134, 29);
     paddle1.setColor(touchgfx::Color::getColorFrom24BitRGB(6, 128, 255));
 
     back_button.setXY(0, 0);
@@ -33,22 +33,19 @@ PongViewBase::PongViewBase() :
     back_button.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     back_button.setAction(buttonCallback);
 
-    textArea1.setXY(442, 230);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID23));
-
-    textArea1_1.setXY(22, 229);
-    textArea1_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    textArea1_1.setLinespacing(0);
-    textArea1_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID24));
+    score.setXY(299, 0);
+    score.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 173, 173));
+    score.setLinespacing(0);
+    scoreBuffer[0] = 0;
+    score.setWildcard(scoreBuffer);
+    score.resizeToCurrentText();
+    score.setTypedText(touchgfx::TypedText(T_SINGLEUSEID28));
 
     add(background);
     add(ball);
     add(paddle1);
     add(back_button);
-    add(textArea1);
-    add(textArea1_1);
+    add(score);
 }
 
 void PongViewBase::setupScreen()

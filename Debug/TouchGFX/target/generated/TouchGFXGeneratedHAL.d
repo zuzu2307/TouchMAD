@@ -99,6 +99,7 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
  ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
@@ -349,6 +350,8 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp:
 
 ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp:
 

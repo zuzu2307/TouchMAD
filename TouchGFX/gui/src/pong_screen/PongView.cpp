@@ -40,6 +40,7 @@ void PongView::move_right(){
 void PongView::handleTickEvent(){
 	tick ++;
 	move_ball();
+	updateTxt(10);
 }
 
 void PongView::move_ball(){\
@@ -52,26 +53,27 @@ void PongView::move_ball(){\
 	ballPainter.setColor( touchgfx::Color::getColorFrom24BitRGB(6, 128, 255));
 	ball.invalidate();
 
-	// change direction vertical
+
 	if(check_collision()==1){
 		ball_vertical_direction = -1;
+
+		if(ball_horizontal_direction==1){
+			ball_horizontal_direction = 2;
+		}
+		else if (ball_horizontal_direction==2){
+			ball_horizontal_direction = 1;
+		}
+
 	}
 	else if(check_collision()==2){
 		ball_vertical_direction = 1;
 	}
-
-
-// change direction horizontal
-	if(check_moving()==1 && check_collision()==1){
+	else if(check_collision()==3){
 		ball_horizontal_direction = 1;
 	}
-	else if (check_moving()==2 && check_collision()==1){
+	else if(check_collision()==4){
 		ball_horizontal_direction = -1;
 	}
-
-
-
-
 
 }
 
@@ -84,6 +86,16 @@ int PongView::check_collision(){
 	// collide with wall
 	if(ball.getY()+ball.getHeight()-margin-20<=0){
 		return 2;
+	}
+
+	// collide with left wall
+	if(ball.getX()+ball.getWidth()-margin-20<=0){
+		return 3;
+	}
+
+	// collide with right wall
+	if(ball.getX()+ball.getWidth() >= 480){
+		return 4;
 	}
 
 	return 0;
@@ -106,5 +118,9 @@ int PongView::check_moving(){
 
 	return 0;
 
+}
 
+void PongView::updateTxt(int newValue){
+	Unicode::snprintf(scoreBuffer, 10, "hello %d", newValue);
+	score.invalidate();
 }

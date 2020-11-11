@@ -67,6 +67,7 @@ TouchGFX/gui/src/pong_screen/PongPresenter.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
@@ -206,6 +207,8 @@ TouchGFX/gui/src/pong_screen/PongPresenter.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 

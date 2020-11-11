@@ -18,13 +18,16 @@ protected:
     void move_ball();
     int check_collision(); // 1 collide with paddle 1 , 2 collide with paddle 2
     int check_moving(); // Left(1), Right(2), Mid(0)
+    void updateTxt(int);
 private:
     int ball_vertical_direction = 1; // 0 down 1 up
-    int ball_horizontal_direction = 0; // 0 mid 1 left 2 right
+    int ball_horizontal_direction = 1; // 0 mid 1 left 2 right
     int ball_speed = 4;
     int margin = 40;
     int tick = 0;
     int pos;
+
+
 };
 
 #endif // PONGVIEW_HPP

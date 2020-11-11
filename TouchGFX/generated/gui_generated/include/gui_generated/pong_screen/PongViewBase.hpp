@@ -11,7 +11,7 @@
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB888.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/mixins/Draggable.hpp>
 #include <touchgfx/EasingEquations.hpp>
 #include <touchgfx/mixins/MoveAnimator.hpp>
@@ -36,8 +36,13 @@ protected:
     touchgfx::PainterRGB888 ballPainter;
     touchgfx::Draggable< touchgfx::Box > paddle1;
     touchgfx::ButtonWithLabel back_button;
-    touchgfx::TextArea textArea1;
-    touchgfx::TextArea textArea1_1;
+    touchgfx::TextAreaWithOneWildcard score;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t SCORE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar scoreBuffer[SCORE_SIZE];
 
 private:
 

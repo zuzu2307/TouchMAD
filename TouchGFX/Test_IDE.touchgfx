@@ -626,8 +626,8 @@
             },
             "Alpha": 255,
             "Name": "paddle1",
-            "X": 173,
-            "Y": 182,
+            "X": 66,
+            "Y": 212,
             "Width": 134,
             "Height": 29,
             "Type": "Box",
@@ -666,43 +666,24 @@
             "Moveable": false
           },
           {
-            "TextId": "SingleUseId23",
+            "TextId": "SingleUseId28",
             "TextRotation": "0",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 0,
+              "Green": 173,
+              "Blue": 173
             },
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
-            "Name": "textArea1",
-            "X": 442,
-            "Y": 230,
-            "Width": 16,
-            "Height": 25,
-            "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId24",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 10
             },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "textArea1_1",
-            "X": 22,
-            "Y": 229,
-            "Width": 16,
+            "Name": "score",
+            "X": 299,
+            "Y": 0,
+            "Width": 57,
             "Height": 25,
             "Type": "TextArea",
             "Visible": true,
@@ -825,19 +806,15 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId23",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId24",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId25",
         "IsResource": true
       },
       {
         "TextEntryId": "SingleUseId26",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId28",
         "IsResource": false
       }
     ],
