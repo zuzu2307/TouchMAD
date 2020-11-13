@@ -23,11 +23,13 @@ public:
     // Music
     void gotoMusicScreenNoTransition();
 
-    // Dino
-    void gotoDinoScreenNoTransition();
+    // gameover
+    void gotogameoverScreenNoTransition();
 
     // Pong
     void gotoPongScreenCoverTransitionEast();
+
+    void gotoPongScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -42,11 +44,13 @@ protected:
     // Music
     void gotoMusicScreenNoTransitionImpl();
 
-    // Dino
-    void gotoDinoScreenNoTransitionImpl();
+    // gameover
+    void gotogameoverScreenNoTransitionImpl();
 
     // Pong
     void gotoPongScreenCoverTransitionEastImpl();
+
+    void gotoPongScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

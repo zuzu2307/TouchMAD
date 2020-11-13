@@ -97,6 +97,7 @@ SDRAM_HandleTypeDef hsdram1;
 osThreadId defaultTaskHandle;
 /* USER CODE BEGIN PV */
 static FMC_SDRAM_CommandTypeDef Command;
+int pong_score;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

@@ -22,8 +22,8 @@
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <gui/music_screen/MusicView.hpp>
 #include <gui/music_screen/MusicPresenter.hpp>
-#include <gui/dino_screen/DinoView.hpp>
-#include <gui/dino_screen/DinoPresenter.hpp>
+#include <gui/gameover_screen/gameoverView.hpp>
+#include <gui/gameover_screen/gameoverPresenter.hpp>
 #include <gui/pong_screen/PongView.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
 
@@ -50,7 +50,7 @@ public:
      */
     typedef touchgfx::meta::TypeList< screenView,
             touchgfx::meta::TypeList< MusicView,
-            touchgfx::meta::TypeList< DinoView,
+            touchgfx::meta::TypeList< gameoverView,
             touchgfx::meta::TypeList< PongView,
             touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
@@ -66,7 +66,7 @@ public:
      */
     typedef touchgfx::meta::TypeList< screenPresenter,
             touchgfx::meta::TypeList< MusicPresenter,
-            touchgfx::meta::TypeList< DinoPresenter,
+            touchgfx::meta::TypeList< gameoverPresenter,
             touchgfx::meta::TypeList< PongPresenter,
             touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;

@@ -1,9 +1,13 @@
 #ifndef PONGVIEW_HPP
 #define PONGVIEW_HPP
 
+#include <main.h>
 #include <gui_generated/pong_screen/PongViewBase.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
 #include <touchgfx/Color.hpp>
+
+extern int pong_score;
+
 class PongView : public PongViewBase
 {
 public:

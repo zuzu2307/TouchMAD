@@ -147,7 +147,7 @@
             },
             "Action": {
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Dino",
+              "ActionComponent": "gameover",
               "Type": "ActionGotoScreen"
             }
           }
@@ -538,18 +538,22 @@
             "Moveable": false
           },
           {
+            "TextId": "SingleUseId33",
+            "TextRotation": "0",
             "Color": {
-              "Red": 217,
-              "Green": 165,
-              "Blue": 37
+              "Red": 235,
+              "Green": 0,
+              "Blue": 0
             },
             "Alpha": 255,
-            "Name": "land",
-            "X": 0,
-            "Y": 173,
-            "Width": 480,
-            "Height": 99,
-            "Type": "Box",
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "gameover_text",
+            "X": 179,
+            "Y": 124,
+            "Width": 122,
+            "Height": 25,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -557,75 +561,27 @@
             "Moveable": false
           },
           {
+            "TextId": "SingleUseId34",
+            "TextRotation": "0",
             "Color": {
-              "Red": 17,
-              "Green": 86,
-              "Blue": 255
+              "Red": 0,
+              "Green": 173,
+              "Blue": 173
             },
             "Alpha": 255,
-            "Name": "character",
-            "X": 20,
-            "Y": 123,
-            "Width": 20,
-            "Height": 50,
-            "Type": "Box",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Color": {
-              "Red": 255,
-              "Green": 53,
-              "Blue": 53
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId35",
+              "UseBuffer": true,
+              "BufferSize": 20
             },
-            "Alpha": 255,
-            "Name": "obstacle",
-            "X": 183,
-            "Y": 107,
-            "Width": 46,
-            "Height": 66,
-            "Type": "Box",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Color": {
-              "Red": 255,
-              "Green": 53,
-              "Blue": 53
-            },
-            "Alpha": 255,
-            "Name": "obstacle_1",
-            "X": 306,
-            "Y": 107,
-            "Width": 46,
-            "Height": 66,
-            "Type": "Box",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Color": {
-              "Red": 255,
-              "Green": 53,
-              "Blue": 53
-            },
-            "Alpha": 255,
-            "Name": "obstacle_2",
-            "X": 411,
-            "Y": 107,
-            "Width": 46,
-            "Height": 66,
-            "Type": "Box",
+            "Name": "score",
+            "X": 166,
+            "Y": 149,
+            "Width": 173,
+            "Height": 25,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -643,12 +599,12 @@
             },
             "Action": {
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen",
+              "ActionComponent": "Pong",
               "Type": "ActionGotoScreen"
             }
           }
         ],
-        "Name": "Dino",
+        "Name": "gameover",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -896,6 +852,18 @@
       },
       {
         "TextEntryId": "SingleUseId32",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId33",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId34",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId35",
         "IsResource": false
       }
     ],

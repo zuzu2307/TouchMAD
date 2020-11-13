@@ -66,38 +66,11 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../TouchGFX/gui/include/gui/music_screen/MusicPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
- ../TouchGFX/gui/include/gui/dino_screen/DinoView.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/dino_screen/DinoViewBase.hpp \
- ../TouchGFX/gui/include/gui/dino_screen/DinoPresenter.hpp \
- ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
- ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
+ ../TouchGFX/gui/include/gui/gameover_screen/gameoverView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/gameoverViewBase.hpp \
+ ../TouchGFX/gui/include/gui/gameover_screen/gameoverPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
- ../TouchGFX/generated/images/include/BitmapDatabase.hpp \
- ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp \
- ../TouchGFX/target/generated/STM32DMA.hpp \
- ../TouchGFX/target/TouchGFXHAL.hpp \
- ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
- ../TouchGFX/target/STM32TouchController.hpp \
+ ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  ../Core/Inc/stm32f7xx_hal_conf.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
@@ -146,7 +119,34 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
+ ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ ../TouchGFX/generated/images/include/BitmapDatabase.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp \
+ ../TouchGFX/target/generated/STM32DMA.hpp \
+ ../TouchGFX/target/TouchGFXHAL.hpp \
+ ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
+ ../TouchGFX/target/STM32TouchController.hpp
 
 ../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp:
 
@@ -280,69 +280,17 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
-../TouchGFX/gui/include/gui/dino_screen/DinoView.hpp:
+../TouchGFX/gui/include/gui/gameover_screen/gameoverView.hpp:
 
-../TouchGFX/generated/gui_generated/include/gui_generated/dino_screen/DinoViewBase.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/gameoverViewBase.hpp:
 
-../TouchGFX/gui/include/gui/dino_screen/DinoPresenter.hpp:
-
-../TouchGFX/gui/include/gui/pong_screen/PongView.hpp:
-
-../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp:
-
-../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:
+../TouchGFX/gui/include/gui/gameover_screen/gameoverPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp:
+../TouchGFX/gui/include/gui/pong_screen/PongView.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
-
-../TouchGFX/generated/images/include/BitmapDatabase.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp:
-
-../TouchGFX/target/generated/STM32DMA.hpp:
-
-../TouchGFX/target/TouchGFXHAL.hpp:
-
-../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
-
-../TouchGFX/target/STM32TouchController.hpp:
+../Core/Inc/main.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 
@@ -441,3 +389,57 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
+
+../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp:
+
+../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
+
+../TouchGFX/generated/images/include/BitmapDatabase.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD24bpp.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp:
+
+../TouchGFX/target/generated/STM32DMA.hpp:
+
+../TouchGFX/target/TouchGFXHAL.hpp:
+
+../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
+
+../TouchGFX/target/STM32TouchController.hpp:

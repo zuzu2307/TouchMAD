@@ -1,17 +1,17 @@
-#ifndef DINOPRESENTER_HPP
-#define DINOPRESENTER_HPP
+#ifndef GAMEOVERPRESENTER_HPP
+#define GAMEOVERPRESENTER_HPP
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
 
 using namespace touchgfx;
 
-class DinoView;
+class gameoverView;
 
-class DinoPresenter : public touchgfx::Presenter, public ModelListener
+class gameoverPresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    DinoPresenter(DinoView& v);
+    gameoverPresenter(gameoverView& v);
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,12 +25,12 @@ public:
      */
     virtual void deactivate();
 
-    virtual ~DinoPresenter() {};
+    virtual ~gameoverPresenter() {};
 
 private:
-    DinoPresenter();
+    gameoverPresenter();
 
-    DinoView& view;
+    gameoverView& view;
 };
 
-#endif // DINOPRESENTER_HPP
+#endif // GAMEOVERPRESENTER_HPP

@@ -13,8 +13,8 @@
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <gui/music_screen/MusicView.hpp>
 #include <gui/music_screen/MusicPresenter.hpp>
-#include <gui/dino_screen/DinoView.hpp>
-#include <gui/dino_screen/DinoPresenter.hpp>
+#include <gui/gameover_screen/gameoverView.hpp>
+#include <gui/gameover_screen/gameoverPresenter.hpp>
 #include <gui/pong_screen/PongView.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
 
@@ -72,17 +72,17 @@ void FrontendApplicationBase::gotoMusicScreenNoTransitionImpl()
     touchgfx::makeTransition<MusicView, MusicPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// Dino
+// gameover
 
-void FrontendApplicationBase::gotoDinoScreenNoTransition()
+void FrontendApplicationBase::gotogameoverScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoDinoScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotogameoverScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoDinoScreenNoTransitionImpl()
+void FrontendApplicationBase::gotogameoverScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<DinoView, DinoPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<gameoverView, gameoverPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // Pong
@@ -96,4 +96,15 @@ void FrontendApplicationBase::gotoPongScreenCoverTransitionEast()
 void FrontendApplicationBase::gotoPongScreenCoverTransitionEastImpl()
 {
     touchgfx::makeTransition<PongView, PongPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoPongScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoPongScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoPongScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<PongView, PongPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

@@ -83,6 +83,10 @@ void PongView::move_ball(){\
 	else if(check_collision()==4){
 		ball_horizontal_direction = -1;
 	}
+	else if(check_collision()==5){
+		pong_score = sc;
+		application().gotogameoverScreenNoTransition();
+	}
 
 }
 
@@ -105,6 +109,11 @@ int PongView::check_collision(){
 	// collide with right wall
 	if(ball.getX()+ball.getWidth() >= 480){
 		return 4;
+	}
+
+	// collide with bottom
+	if(ball.getY() >= 270){
+		return 5;
 	}
 
 	return 0;

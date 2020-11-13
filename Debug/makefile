@@ -14,7 +14,7 @@ RM := rm -rf
 -include TouchGFX/gui/src/pong_screen/subdir.mk
 -include TouchGFX/gui/src/music_screen/subdir.mk
 -include TouchGFX/gui/src/model/subdir.mk
--include TouchGFX/gui/src/dino_screen/subdir.mk
+-include TouchGFX/gui/src/gameover_screen/subdir.mk
 -include TouchGFX/gui/src/common/subdir.mk
 -include TouchGFX/generated/texts/src/subdir.mk
 -include TouchGFX/generated/images/src/__designer/subdir.mk
@@ -22,7 +22,7 @@ RM := rm -rf
 -include TouchGFX/generated/gui_generated/src/screen_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/pong_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/music_screen/subdir.mk
--include TouchGFX/generated/gui_generated/src/dino_screen/subdir.mk
+-include TouchGFX/generated/gui_generated/src/gameover_screen/subdir.mk
 -include TouchGFX/generated/gui_generated/src/common/subdir.mk
 -include TouchGFX/generated/fonts/src/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/touchgfx/framework/source/platform/hal/simulator/sdl2/subdir.mk

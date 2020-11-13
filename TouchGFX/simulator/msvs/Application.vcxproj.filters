@@ -196,17 +196,17 @@
     <Filter Include="Header Files\generated\gui_generated\music_screen">
       <UniqueIdentifier>D4F109E7-4F79-05C7-CC72-46AFBD3C4FE0</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\dino_screen">
-      <UniqueIdentifier>3B9A23E9-BA35-86CF-7ED5-DF6D44461641</UniqueIdentifier>
+    <Filter Include="Source Files\gui\gameover_screen">
+      <UniqueIdentifier>90386267-481F-F268-D7EC-D3CB49EFBFE1</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\dino_screen">
-      <UniqueIdentifier>7221C7C1-BF25-3124-5793-F9DB42EA178C</UniqueIdentifier>
+    <Filter Include="Header Files\gui\gameover_screen">
+      <UniqueIdentifier>C05A5C35-69B9-F03A-017A-590975CAA588</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\dino_screen">
-      <UniqueIdentifier>EBFFCF29-3638-5D62-F950-25E5D4A3B5EA</UniqueIdentifier>
+    <Filter Include="Source Files\generated\gui_generated\gameover_screen">
+      <UniqueIdentifier>497C2135-0813-D960-0343-1DF41B699110</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\dino_screen">
-      <UniqueIdentifier>A9A27123-C749-B63F-8D48-8670DA2CB944</UniqueIdentifier>
+    <Filter Include="Header Files\generated\gui_generated\gameover_screen">
+      <UniqueIdentifier>4E6CC42E-795E-7CF6-AC8D-75DECAA00418</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -264,14 +264,14 @@
     <ClCompile Include="..\..\generated\gui_generated\src\music_screen\MusicViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\music_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\dino_screen\DinoPresenter.cpp">
-      <Filter>Source Files\gui\dino_screen</Filter>
+    <ClCompile Include="..\..\gui\src\gameover_screen\gameoverPresenter.cpp">
+      <Filter>Source Files\gui\gameover_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\dino_screen\DinoView.cpp">
-      <Filter>Source Files\gui\dino_screen</Filter>
+    <ClCompile Include="..\..\gui\src\gameover_screen\gameoverView.cpp">
+      <Filter>Source Files\gui\gameover_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\dino_screen\DinoViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\dino_screen</Filter>
+    <ClCompile Include="..\..\generated\gui_generated\src\gameover_screen\gameoverViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\gameover_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -733,14 +733,14 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\music_screen\MusicViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\music_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\dino_screen\DinoPresenter.hpp">
-      <Filter>Header Files\gui\dino_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\gameover_screen\gameoverPresenter.hpp">
+      <Filter>Header Files\gui\gameover_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\dino_screen\DinoView.hpp">
-      <Filter>Header Files\gui\dino_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\gameover_screen\gameoverView.hpp">
+      <Filter>Header Files\gui\gameover_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\dino_screen\DinoViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\dino_screen</Filter>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gameover_screen\gameoverViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\gameover_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

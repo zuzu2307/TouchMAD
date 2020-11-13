@@ -64,7 +64,7 @@ TouchGFX/build/MINGW32_NT-6.2/touchgfx/framework/source/platform/driver/touch \
 TouchGFX/build/MINGW32_NT-6.2/touchgfx/framework/source/platform/hal/simulator/sdl2 \
 TouchGFX/generated/fonts/src \
 TouchGFX/generated/gui_generated/src/common \
-TouchGFX/generated/gui_generated/src/dino_screen \
+TouchGFX/generated/gui_generated/src/gameover_screen \
 TouchGFX/generated/gui_generated/src/music_screen \
 TouchGFX/generated/gui_generated/src/pong_screen \
 TouchGFX/generated/gui_generated/src/screen_screen \
@@ -72,7 +72,7 @@ TouchGFX/generated/images/src \
 TouchGFX/generated/images/src/__designer \
 TouchGFX/generated/texts/src \
 TouchGFX/gui/src/common \
-TouchGFX/gui/src/dino_screen \
+TouchGFX/gui/src/gameover_screen \
 TouchGFX/gui/src/model \
 TouchGFX/gui/src/music_screen \
 TouchGFX/gui/src/pong_screen \
