@@ -134,91 +134,25 @@
             },
             "Action": {
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Screen2",
+              "ActionComponent": "Music",
               "Type": "ActionGotoScreen"
             }
           },
           {
             "InteractionName": "Interaction3",
-            "HasCompletedTrigger": false,
+            "HasCompletedTrigger": true,
             "Trigger": {
               "TriggerComponent": "buttonWithLabel3",
               "Type": "TriggerClicked"
             },
             "Action": {
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Screen3",
+              "ActionComponent": "Dino",
               "Type": "ActionGotoScreen"
             }
           }
         ],
         "Name": "screen",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
-      },
-      {
-        "Components": [
-          {
-            "Filename": "ConT-min.png",
-            "Alpha": 255,
-            "ScalingAlgorithm": "Nearest-neighbor",
-            "Name": "scalableImage1",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Type": "ScalableImage",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Alpha": 255,
-            "TextId": "SingleUseId26",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
-            "Name": "buttonWithLabel1",
-            "X": 0,
-            "Y": 212,
-            "Width": 60,
-            "Height": 60,
-            "Type": "ButtonWithLabel",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "Interaction1",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "buttonWithLabel1",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen",
-              "Type": "ActionGotoScreen"
-            }
-          }
-        ],
-        "Name": "Screen1",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -237,70 +171,6 @@
             "Width": 480,
             "Height": 272,
             "Type": "Box",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Alpha": 255,
-            "TextId": "SingleUseId17",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
-            "Name": "buttonWithLabel1",
-            "X": 0,
-            "Y": 212,
-            "Width": 60,
-            "Height": 60,
-            "Type": "ButtonWithLabel",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Color": {
-              "Red": 0,
-              "Green": 151,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "StartX": 17,
-            "StartY": 17,
-            "EndY": 17,
-            "EndX": 387,
-            "LineWidth": 30,
-            "LineEndingStyle": "Round",
-            "Style": "Style30",
-            "FileNameBackground": "__designer\\Blue_ProgressIndicators_bg_large_progress_indicator_bg_round_0_degrees.png",
-            "IndicatorPositionX": 0,
-            "IndicatorPositionY": 0,
-            "IndicatorPositionWidth": 0,
-            "IndicatorPositionHeight": 0,
-            "ProgressRangeMin": 0,
-            "ProgressRangeMax": 100,
-            "ProgressRangeSteps": 0,
-            "ProgressRangeStepsMin": 0,
-            "ProgressInitialValue": 60,
-            "Name": "lineProgress1",
-            "X": 38,
-            "Y": 178,
-            "Width": 404,
-            "Height": 34,
-            "Type": "LineProgress",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -331,25 +201,45 @@
             "Moveable": false
           },
           {
-            "Color": {
-              "Red": 52,
-              "Green": 181,
-              "Blue": 214
-            },
-            "CenterX": 40,
-            "CenterY": 40,
-            "Radius": 40,
-            "LineWidth": 0,
-            "StartAngle": 0,
-            "EndAngle": 360,
-            "CapPrecision": "Butt",
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
             "Alpha": 255,
-            "Name": "circle1",
-            "X": 200,
-            "Y": 72,
-            "Width": 80,
-            "Height": 80,
-            "Type": "Circle",
+            "IconPressed": "__designer\\Dark_Icons_Play_32.png",
+            "IconReleased": "__designer\\Dark_Icons_Play_32.png",
+            "IconX": 19,
+            "IconY": 14,
+            "IconHeight": 32,
+            "IconWidth": 23,
+            "ButtonStyle": "Style9",
+            "Name": "Play_Button",
+            "X": 116,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId30",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea2",
+            "X": 0,
+            "Y": 105,
+            "Width": 480,
+            "Height": 31,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -357,37 +247,173 @@
             "Moveable": false
           },
           {
-            "Color": {
-              "Red": 240,
-              "Green": 219,
-              "Blue": 219
-            },
-            "Points": [
-              {
-                "X": 40.0,
-                "Y": 0.0
-              },
-              {
-                "X": 80.0,
-                "Y": 40.0
-              },
-              {
-                "X": 40.0,
-                "Y": 80.0
-              }
-            ],
-            "Angle": 0.0,
-            "XScale": 0.8,
-            "YScale": 0.9,
-            "XOrigin": -2.7755575615628914E-17,
-            "YOrigin": 0.0,
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
             "Alpha": 255,
-            "Name": "shape1",
-            "X": 199,
-            "Y": 77,
-            "Width": 80,
-            "Height": 80,
-            "Type": "Shape",
+            "IconPressed": "__designer\\Dark_Icons_Pause_32.png",
+            "IconReleased": "__designer\\Dark_Icons_Pause_32.png",
+            "IconX": 17,
+            "IconY": 14,
+            "IconHeight": 32,
+            "IconWidth": 26,
+            "ButtonStyle": "Style9",
+            "Name": "Pause_Button",
+            "X": 116,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Stop_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Stop_32.png",
+            "IconX": 15,
+            "IconY": 15,
+            "IconHeight": 30,
+            "IconWidth": 30,
+            "ButtonStyle": "Style9",
+            "IconStyle": "Icon61",
+            "Name": "Stop_Button",
+            "X": 180,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Dark_Icons_Go_back_32.png",
+            "IconReleased": "__designer\\Dark_Icons_Go_back_32.png",
+            "IconX": 14,
+            "IconY": 15,
+            "IconHeight": 30,
+            "IconWidth": 32,
+            "ButtonStyle": "Style9",
+            "Name": "Prev_Button",
+            "X": 244,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Dark_Icons_Go_next_32.png",
+            "IconReleased": "__designer\\Dark_Icons_Go_next_32.png",
+            "IconX": 14,
+            "IconY": 15,
+            "IconHeight": 30,
+            "IconWidth": 32,
+            "ButtonStyle": "Style9",
+            "Name": "Next_Button",
+            "X": 308,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId31",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style9",
+            "Name": "VolUp_Button",
+            "X": 420,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId32",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style9",
+            "Name": "VolDown_Button",
+            "X": 0,
+            "Y": 212,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Dark_Icons_Back_arrow_32.png",
+            "IconReleased": "__designer\\Dark_Icons_Back_arrow_32.png",
+            "IconX": 19,
+            "IconY": 15,
+            "IconHeight": 32,
+            "IconWidth": 19,
+            "ButtonStyle": "Style5",
+            "Name": "Back_Button",
+            "X": 0,
+            "Y": 0,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -400,7 +426,7 @@
             "InteractionName": "Interaction1",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "buttonWithLabel1",
+              "TriggerComponent": "Back_Button",
               "Type": "TriggerClicked"
             },
             "Action": {
@@ -408,11 +434,59 @@
               "ActionComponent": "screen",
               "Type": "ActionGotoScreen"
             }
+          },
+          {
+            "InteractionName": "Hide_Pause",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Pause_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "Pause_Button",
+              "Type": "ActionHide"
+            }
+          },
+          {
+            "InteractionName": "Show_Play",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Pause_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "Play_Button",
+              "Type": "ActionShow"
+            }
+          },
+          {
+            "InteractionName": "Hide_Play",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Play_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "Play_Button",
+              "Type": "ActionHide"
+            }
+          },
+          {
+            "InteractionName": "Show_Pause",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Play_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ActionComponent": "Pause_Button",
+              "Type": "ActionShow"
+            }
           }
         ],
-        "Name": "Screen2",
+        "Name": "Music",
         "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 7200
+        "CanvasBufferSize": 0
       },
       {
         "Components": [
@@ -423,30 +497,11 @@
               "Blue": 255
             },
             "Alpha": 255,
-            "Name": "box1",
+            "Name": "bg",
             "X": 0,
             "Y": 0,
             "Width": 480,
             "Height": 272,
-            "Type": "Box",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "Name": "box2",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 212,
             "Type": "Box",
             "Visible": true,
             "Draggable": false,
@@ -484,47 +539,16 @@
           },
           {
             "Color": {
-              "Red": 0,
-              "Green": 151,
-              "Blue": 255
-            },
-            "Direction": "Right",
-            "Alpha": 255,
-            "Style": "Style5",
-            "FileNameBackground": "__designer\\Blue_ProgressIndicators_bg_large_progress_indicator_bg_square_0_degrees.png",
-            "IndicatorPositionX": 2,
-            "IndicatorPositionY": 2,
-            "IndicatorPositionWidth": 400,
-            "IndicatorPositionHeight": 30,
-            "ProgressRangeMin": 0,
-            "ProgressRangeMax": 100,
-            "ProgressRangeSteps": 0,
-            "ProgressRangeStepsMin": 0,
-            "ProgressInitialValue": 60,
-            "Name": "boxProgress1",
-            "X": 60,
-            "Y": 224,
-            "Width": 404,
-            "Height": 34,
-            "Type": "BoxProgress",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Color": {
-              "Red": 4,
-              "Green": 48,
-              "Blue": 240
+              "Red": 217,
+              "Green": 165,
+              "Blue": 37
             },
             "Alpha": 255,
-            "Name": "box3",
-            "X": 9,
-            "Y": 227,
-            "Width": 15,
-            "Height": 31,
+            "Name": "land",
+            "X": 0,
+            "Y": 173,
+            "Width": 480,
+            "Height": 99,
             "Type": "Box",
             "Visible": true,
             "Draggable": false,
@@ -534,16 +558,73 @@
           },
           {
             "Color": {
-              "Red": 4,
-              "Green": 48,
-              "Blue": 240
+              "Red": 17,
+              "Green": 86,
+              "Blue": 255
             },
             "Alpha": 255,
-            "Name": "box3_1",
-            "X": 30,
-            "Y": 227,
-            "Width": 15,
-            "Height": 31,
+            "Name": "character",
+            "X": 20,
+            "Y": 123,
+            "Width": 20,
+            "Height": 50,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 53,
+              "Blue": 53
+            },
+            "Alpha": 255,
+            "Name": "obstacle",
+            "X": 183,
+            "Y": 107,
+            "Width": 46,
+            "Height": 66,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 53,
+              "Blue": 53
+            },
+            "Alpha": 255,
+            "Name": "obstacle_1",
+            "X": 306,
+            "Y": 107,
+            "Width": 46,
+            "Height": 66,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 53,
+              "Blue": 53
+            },
+            "Alpha": 255,
+            "Name": "obstacle_2",
+            "X": 411,
+            "Y": 107,
+            "Width": 46,
+            "Height": 66,
             "Type": "Box",
             "Visible": true,
             "Draggable": false,
@@ -567,7 +648,7 @@
             }
           }
         ],
-        "Name": "Screen3",
+        "Name": "Dino",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -638,34 +719,6 @@
             "Moveable": false
           },
           {
-            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Alpha": 255,
-            "TextId": "SingleUseId22",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0",
-            "Name": "back_button",
-            "X": 0,
-            "Y": 0,
-            "Width": 60,
-            "Height": 60,
-            "Type": "ButtonWithLabel",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "TextId": "SingleUseId28",
             "TextRotation": "0",
             "Color": {
@@ -692,6 +745,29 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Dark_Icons_Back_arrow_32.png",
+            "IconReleased": "__designer\\Dark_Icons_Back_arrow_32.png",
+            "IconX": 19,
+            "IconY": 15,
+            "IconHeight": 32,
+            "IconWidth": 19,
+            "ButtonStyle": "Style5",
+            "Name": "Back_Button",
+            "X": 0,
+            "Y": 0,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
@@ -699,7 +775,7 @@
             "InteractionName": "back_to_main_screen",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "back_button",
+              "TriggerComponent": "Back_Button",
               "Type": "TriggerClicked"
             },
             "Action": {
@@ -783,10 +859,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId17",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId18",
         "IsResource": false
       },
@@ -803,16 +875,8 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId22",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId25",
         "IsResource": true
-      },
-      {
-        "TextEntryId": "SingleUseId26",
-        "IsResource": false
       },
       {
         "TextEntryId": "SingleUseId28",
@@ -820,6 +884,18 @@
       },
       {
         "TextEntryId": "SingleUseId29",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId30",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId31",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId32",
         "IsResource": false
       }
     ],

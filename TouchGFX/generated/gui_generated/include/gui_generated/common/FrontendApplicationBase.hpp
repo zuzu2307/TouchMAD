@@ -20,11 +20,11 @@ public:
 
     void gotoscreenScreenSlideTransitionEast();
 
-    // Screen2
-    void gotoScreen2ScreenNoTransition();
+    // Music
+    void gotoMusicScreenNoTransition();
 
-    // Screen3
-    void gotoScreen3ScreenNoTransition();
+    // Dino
+    void gotoDinoScreenNoTransition();
 
     // Pong
     void gotoPongScreenCoverTransitionEast();
@@ -39,11 +39,11 @@ protected:
 
     void gotoscreenScreenSlideTransitionEastImpl();
 
-    // Screen2
-    void gotoScreen2ScreenNoTransitionImpl();
+    // Music
+    void gotoMusicScreenNoTransitionImpl();
 
-    // Screen3
-    void gotoScreen3ScreenNoTransitionImpl();
+    // Dino
+    void gotoDinoScreenNoTransitionImpl();
 
     // Pong
     void gotoPongScreenCoverTransitionEastImpl();

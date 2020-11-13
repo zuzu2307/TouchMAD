@@ -57,15 +57,15 @@ void screenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     else if (&src == &buttonWithLabel2)
     {
         //Interaction2
-        //When buttonWithLabel2 clicked change screen to Screen2
-        //Go to Screen2 with no screen transition
-        application().gotoScreen2ScreenNoTransition();
+        //When buttonWithLabel2 clicked change screen to Music
+        //Go to Music with no screen transition
+        application().gotoMusicScreenNoTransition();
     }
     else if (&src == &buttonWithLabel3)
     {
         //Interaction3
-        //When buttonWithLabel3 clicked change screen to Screen3
-        //Go to Screen3 with no screen transition
-        application().gotoScreen3ScreenNoTransition();
+        //When buttonWithLabel3 clicked change screen to Dino
+        //Go to Dino with no screen transition
+        application().gotoDinoScreenNoTransition();
     }
 }

@@ -7,13 +7,15 @@
 
 extern touchgfx::GeneratedFont& getFont_verdana_20_4bpp();
 extern touchgfx::GeneratedFont& getFont_verdana_40_4bpp();
-extern touchgfx::GeneratedFont& getFont_verdana_10_4bpp();
+extern touchgfx::GeneratedFont& getFont_verdana_18_4bpp();
+extern touchgfx::GeneratedFont& getFont_verdana_27_4bpp();
 
 const touchgfx::Font* touchgfx_fonts[] =
 {
     &(getFont_verdana_20_4bpp()),
     &(getFont_verdana_40_4bpp()),
-    &(getFont_verdana_10_4bpp())
+    &(getFont_verdana_18_4bpp()),
+    &(getFont_verdana_27_4bpp())
 };
 
 extern const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[];
@@ -30,16 +32,16 @@ const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[] TEXT_LOCAT
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 1, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 0, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR }
+    { 3, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR }
 };
 
 TEXT_LOCATION_FLASH_PRAGMA
@@ -83,7 +85,10 @@ void resetFont(touchgfx::FontId fontId)
         touchgfx_fonts[1] = &(getFont_verdana_40_4bpp());
         break;
     case 2:
-        touchgfx_fonts[2] = &(getFont_verdana_10_4bpp());
+        touchgfx_fonts[2] = &(getFont_verdana_18_4bpp());
+        break;
+    case 3:
+        touchgfx_fonts[3] = &(getFont_verdana_27_4bpp());
         break;
     }
 }

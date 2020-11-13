@@ -1,0 +1,13 @@
+Presenter.hpp:40:18:virtual void touchgfx::Presenter::activate()	16	static
+Presenter.hpp:50:18:virtual void touchgfx::Presenter::deactivate()	16	static
+Presenter.hpp:55:13:touchgfx::Presenter::~Presenter()	16	static
+Presenter.hpp:55:13:virtual touchgfx::Presenter::~Presenter()	16	static
+Presenter.hpp:61:5:touchgfx::Presenter::Presenter()	16	static
+ModelListener.hpp:9:5:ModelListener::ModelListener()	16	static
+ModelListener.hpp:11:13:ModelListener::~ModelListener()	16	static
+ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	16	static
+MusicPresenter.hpp:28:13:MusicPresenter::~MusicPresenter()	16	static
+MusicPresenter.hpp:28:13:virtual MusicPresenter::~MusicPresenter()	16	static
+MusicPresenter.cpp:4:1:MusicPresenter::MusicPresenter(MusicView&)	16	static
+MusicPresenter.cpp:10:6:virtual void MusicPresenter::activate()	16	static
+MusicPresenter.cpp:15:6:virtual void MusicPresenter::deactivate()	16	static

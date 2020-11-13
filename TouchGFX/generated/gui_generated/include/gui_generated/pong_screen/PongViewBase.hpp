@@ -10,8 +10,8 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB888.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/mixins/Draggable.hpp>
 #include <touchgfx/EasingEquations.hpp>
 #include <touchgfx/mixins/MoveAnimator.hpp>
@@ -35,8 +35,8 @@ protected:
     touchgfx::MoveAnimator< touchgfx::Circle > ball;
     touchgfx::PainterRGB888 ballPainter;
     touchgfx::Draggable< touchgfx::Box > paddle1;
-    touchgfx::ButtonWithLabel back_button;
     touchgfx::TextAreaWithOneWildcard score;
+    touchgfx::ButtonWithIcon Back_Button;
 
     /*
      * Wildcard Buffers

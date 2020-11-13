@@ -18,6 +18,7 @@ protected:
     void move_ball();
     int check_collision(); // 1 collide with paddle 1 , 2 collide with paddle 2
     int check_moving(); // Left(1), Right(2), Mid(0)
+    int check_gameover();
     void updateTxt(int);
 private:
     int ball_vertical_direction = 1; // 0 down 1 up
@@ -27,6 +28,7 @@ private:
     int tick = 0;
     int pos;
     int sc = 0;
+    int collide_count = 0;
 
 };
 

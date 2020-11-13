@@ -61,44 +61,33 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- ../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
- ../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- ../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
- ../TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
+ ../TouchGFX/gui/include/gui/music_screen/MusicView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/music_screen/MusicViewBase.hpp \
+ ../TouchGFX/gui/include/gui/music_screen/MusicPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
+ ../TouchGFX/gui/include/gui/dino_screen/DinoView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/dino_screen/DinoViewBase.hpp \
+ ../TouchGFX/gui/include/gui/dino_screen/DinoPresenter.hpp \
+ ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
+ ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp \
- ../TouchGFX/gui/include/gui/screen3_screen/Screen3View.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/screen3_screen/Screen3ViewBase.hpp \
- ../TouchGFX/gui/include/gui/screen3_screen/Screen3Presenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/BoxProgress.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
- ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
- ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
@@ -281,29 +270,33 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 
-../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
+../TouchGFX/gui/include/gui/music_screen/MusicView.hpp:
 
-../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/music_screen/MusicViewBase.hpp:
 
-../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:
+../TouchGFX/gui/include/gui/music_screen/MusicPresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
-../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:
+../TouchGFX/gui/include/gui/dino_screen/DinoView.hpp:
 
-../TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/dino_screen/DinoViewBase.hpp:
 
-../TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp:
+../TouchGFX/gui/include/gui/dino_screen/DinoPresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp:
+../TouchGFX/gui/include/gui/pong_screen/PongView.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
 
@@ -311,15 +304,13 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
-
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
 
@@ -332,30 +323,6 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp:
-
-../TouchGFX/gui/include/gui/screen3_screen/Screen3View.hpp:
-
-../TouchGFX/generated/gui_generated/include/gui_generated/screen3_screen/Screen3ViewBase.hpp:
-
-../TouchGFX/gui/include/gui/screen3_screen/Screen3Presenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/BoxProgress.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp:
-
-../TouchGFX/gui/include/gui/pong_screen/PongView.hpp:
-
-../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp:
-
-../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 

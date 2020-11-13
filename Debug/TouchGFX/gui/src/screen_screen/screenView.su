@@ -38,7 +38,7 @@ screenView.hpp:11:13:screenView::~screenView()	16	static
 screenView.hpp:11:13:virtual screenView::~screenView()	16	static
 screenView.cpp:3:1:screenView::screenView()	16	static
 screenView.cpp:8:6:virtual void screenView::setupScreen()	16	static
-screenView.cpp:13:6:virtual void screenView::tearDownScreen()	16	static
+screenView.cpp:14:6:virtual void screenView::tearDownScreen()	16	static
 Container.hpp:42:7:touchgfx::Container::~Container()	16	static
 Container.hpp:42:7:virtual touchgfx::Container::~Container()	16	static
 Box.hpp:36:7:touchgfx::Box::~Box()	16	static

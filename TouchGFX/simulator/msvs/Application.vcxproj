@@ -23,18 +23,15 @@
     <ClCompile Include="..\..\gui\src\screen_screen\screenPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen_screen\screenView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen_screen\screenViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen2_screen\Screen2Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen2_screen\Screen2View.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen2_screen\Screen2ViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen3_screen\Screen3Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen3_screen\Screen3View.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen3_screen\Screen3ViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\pong_screen\PongPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\pong_screen\PongView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\pong_screen\PongViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\music_screen\MusicPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\music_screen\MusicView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\music_screen\MusicViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\dino_screen\DinoPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\dino_screen\DinoView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\dino_screen\DinoViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -185,18 +182,15 @@
     <ClInclude Include="..\..\gui\include\gui\screen_screen\screenView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_screen\screenViewBase.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2View.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3View.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen3_screen\Screen3ViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\pong_screen\PongPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\pong_screen\PongView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\pong_screen\PongViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\music_screen\MusicPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\music_screen\MusicView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\music_screen\MusicViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\dino_screen\DinoPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\dino_screen\DinoView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\dino_screen\DinoViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

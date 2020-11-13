@@ -13,7 +13,6 @@
 
 
 
-
 #include <touchgfx/transitions/SlideTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
@@ -21,12 +20,10 @@
 
 #include <gui/screen_screen/screenView.hpp>
 #include <gui/screen_screen/screenPresenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
-#include <gui/screen2_screen/Screen2View.hpp>
-#include <gui/screen2_screen/Screen2Presenter.hpp>
-#include <gui/screen3_screen/Screen3View.hpp>
-#include <gui/screen3_screen/Screen3Presenter.hpp>
+#include <gui/music_screen/MusicView.hpp>
+#include <gui/music_screen/MusicPresenter.hpp>
+#include <gui/dino_screen/DinoView.hpp>
+#include <gui/dino_screen/DinoPresenter.hpp>
 #include <gui/pong_screen/PongView.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
 
@@ -52,11 +49,10 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< screenView,
-            touchgfx::meta::TypeList< Screen1View,
-            touchgfx::meta::TypeList< Screen2View,
-            touchgfx::meta::TypeList< Screen3View,
+            touchgfx::meta::TypeList< MusicView,
+            touchgfx::meta::TypeList< DinoView,
             touchgfx::meta::TypeList< PongView,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -69,11 +65,10 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< screenPresenter,
-            touchgfx::meta::TypeList< Screen1Presenter,
-            touchgfx::meta::TypeList< Screen2Presenter,
-            touchgfx::meta::TypeList< Screen3Presenter,
+            touchgfx::meta::TypeList< MusicPresenter,
+            touchgfx::meta::TypeList< DinoPresenter,
             touchgfx::meta::TypeList< PongPresenter,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**

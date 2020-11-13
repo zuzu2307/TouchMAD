@@ -3,8 +3,8 @@
 /*********************************************************************************/
 #include <gui_generated/pong_screen/PongViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include "BitmapDatabase.hpp"
 #include <texts/TextKeysAndLanguages.hpp>
+#include "BitmapDatabase.hpp"
 
 PongViewBase::PongViewBase() :
     buttonCallback(this, &PongViewBase::buttonCallbackHandler)
@@ -26,13 +26,6 @@ PongViewBase::PongViewBase() :
     paddle1.setPosition(66, 212, 134, 29);
     paddle1.setColor(touchgfx::Color::getColorFrom24BitRGB(6, 128, 255));
 
-    back_button.setXY(0, 0);
-    back_button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID));
-    back_button.setLabelText(touchgfx::TypedText(T_SINGLEUSEID22));
-    back_button.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    back_button.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    back_button.setAction(buttonCallback);
-
     score.setXY(299, 0);
     score.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 173, 173));
     score.setLinespacing(0);
@@ -41,11 +34,16 @@ PongViewBase::PongViewBase() :
     score.resizeToCurrentText();
     score.setTypedText(touchgfx::TypedText(T_SINGLEUSEID28));
 
+    Back_Button.setXY(0, 0);
+    Back_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_BACK_ARROW_32_ID));
+    Back_Button.setIconXY(19, 15);
+    Back_Button.setAction(buttonCallback);
+
     add(background);
     add(ball);
     add(paddle1);
-    add(back_button);
     add(score);
+    add(Back_Button);
 }
 
 void PongViewBase::setupScreen()
@@ -55,10 +53,10 @@ void PongViewBase::setupScreen()
 
 void PongViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &back_button)
+    if (&src == &Back_Button)
     {
         //back_to_main_screen
-        //When back_button clicked change screen to screen
+        //When Back_Button clicked change screen to screen
         //Go to screen with screen transition towards East
         application().gotoscreenScreenSlideTransitionEast();
     }

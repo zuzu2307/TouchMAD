@@ -40,9 +40,6 @@ void PongView::move_right(){
 void PongView::handleTickEvent(){
 	tick ++;
 	move_ball();
-	sc ++;
-	Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%d", sc);
-	score.invalidate();
 
 }
 
@@ -59,6 +56,15 @@ void PongView::move_ball(){\
 
 	if(check_collision()==1){
 		ball_vertical_direction = -1;
+
+		if(collide_count % 20 == 0){
+			ball_speed = ball_speed  + 1;
+			sc = sc+1;
+			Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%d", sc);
+			score.invalidate();
+
+		}
+		collide_count ++;
 
 		if(ball_horizontal_direction==1){
 			ball_horizontal_direction = 2;

@@ -63,17 +63,17 @@ TouchGFX/generated/gui_generated/src/pong_screen/PongViewBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
- ../TouchGFX/generated/images/include/BitmapDatabase.hpp \
- ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
+ ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
+ ../TouchGFX/generated/images/include/BitmapDatabase.hpp
 
 ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp:
 
@@ -201,17 +201,17 @@ TouchGFX/generated/gui_generated/src/pong_screen/PongViewBase.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
-
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp:
 
@@ -219,6 +219,6 @@ TouchGFX/generated/gui_generated/src/pong_screen/PongViewBase.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
-../TouchGFX/generated/images/include/BitmapDatabase.hpp:
-
 ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
+
+../TouchGFX/generated/images/include/BitmapDatabase.hpp:
