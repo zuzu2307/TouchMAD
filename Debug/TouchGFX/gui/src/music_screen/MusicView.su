@@ -36,9 +36,17 @@ MusicViewBase.hpp:19:13:MusicViewBase::~MusicViewBase()	16	static
 MusicViewBase.hpp:19:13:virtual MusicViewBase::~MusicViewBase()	16	static
 MusicView.hpp:11:13:MusicView::~MusicView()	16	static
 MusicView.hpp:11:13:virtual MusicView::~MusicView()	16	static
-MusicView.cpp:3:1:MusicView::MusicView()	16	static
-MusicView.cpp:8:6:virtual void MusicView::setupScreen()	16	static
-MusicView.cpp:13:6:virtual void MusicView::tearDownScreen()	16	static
+MusicView.cpp:24:1:MusicView::MusicView()	16	static
+MusicView.cpp:29:6:virtual void MusicView::setupScreen()	16	static
+MusicView.cpp:34:6:virtual void MusicView::tearDownScreen()	16	static
+MusicView.cpp:41:6:virtual void MusicView::controlPlay()	16	static
+MusicView.cpp:46:6:virtual void MusicView::controlStop()	16	static
+MusicView.cpp:50:6:virtual void MusicView::controlPrev()	16	static
+MusicView.cpp:54:6:virtual void MusicView::controlNext()	16	static
+MusicView.cpp:58:6:virtual void MusicView::controlVolumeDown()	16	static
+MusicView.cpp:62:6:virtual void MusicView::controlVolumeUp()	16	static
+MusicView.cpp:67:6:virtual void MusicView::sendControlQ(uint8_t)	16	static
+MusicView.cpp:72:6:virtual void MusicView::handleTickEvent()	16	static
 Container.hpp:42:7:touchgfx::Container::~Container()	16	static
 Container.hpp:42:7:virtual touchgfx::Container::~Container()	16	static
 Box.hpp:36:7:touchgfx::Box::~Box()	16	static

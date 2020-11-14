@@ -57,11 +57,17 @@ View.hpp:40:7:touchgfx::View<MusicPresenter>::~View()	16	static
 View.hpp:40:7:virtual touchgfx::View<MusicPresenter>::~View()	16	static
 MusicViewBase.hpp:19:13:MusicViewBase::~MusicViewBase()	16	static
 MusicViewBase.hpp:19:13:virtual MusicViewBase::~MusicViewBase()	16	static
-MusicViewBase.hpp:23:26:FrontendApplication& MusicViewBase::application()	16	static
+MusicViewBase.hpp:25:18:virtual void MusicViewBase::controlPlay()	16	static
+MusicViewBase.hpp:30:18:virtual void MusicViewBase::controlStop()	16	static
+MusicViewBase.hpp:35:18:virtual void MusicViewBase::controlPrev()	16	static
+MusicViewBase.hpp:40:18:virtual void MusicViewBase::controlNext()	16	static
+MusicViewBase.hpp:45:18:virtual void MusicViewBase::controlVolumeDown()	16	static
+MusicViewBase.hpp:50:18:virtual void MusicViewBase::controlVolumeUp()	16	static
+MusicViewBase.hpp:56:26:FrontendApplication& MusicViewBase::application()	16	static
 Color.hpp:51:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
 MusicViewBase.cpp:9:1:MusicViewBase::MusicViewBase()	216	static
-MusicViewBase.cpp:77:6:virtual void MusicViewBase::setupScreen()	16	static
-MusicViewBase.cpp:82:6:void MusicViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+MusicViewBase.cpp:83:6:virtual void MusicViewBase::setupScreen()	16	static
+MusicViewBase.cpp:88:6:void MusicViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 View.hpp:43:5:touchgfx::View<T>::View() [with T = MusicPresenter]	16	static
 Callback.hpp:137:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	16	static
 Callback.hpp:378:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = MusicViewBase; T1 = const touchgfx::AbstractButton&]	24	static

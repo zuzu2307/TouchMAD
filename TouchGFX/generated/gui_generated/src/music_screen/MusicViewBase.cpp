@@ -18,10 +18,10 @@ MusicViewBase::MusicViewBase() :
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID18));
 
-    Play_Button.setXY(116, 212);
-    Play_Button.setVisible(false);
+    Play_Button.setXY(48, 212);
     Play_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PLAY_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PLAY_32_ID));
     Play_Button.setIconXY(19, 14);
+    Play_Button.setAction(buttonCallback);
 
     textArea2.setPosition(48, 109, 372, 54);
     textArea2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
@@ -29,32 +29,38 @@ MusicViewBase::MusicViewBase() :
     textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID30));
 
     Pause_Button.setXY(116, 212);
+    Pause_Button.setVisible(false);
     Pause_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PAUSE_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PAUSE_32_ID));
     Pause_Button.setIconXY(17, 14);
 
-    Stop_Button.setXY(180, 212);
+    Stop_Button.setXY(116, 212);
     Stop_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_STOP_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_STOP_32_ID));
     Stop_Button.setIconXY(15, 15);
+    Stop_Button.setAction(buttonCallback);
 
-    Prev_Button.setXY(244, 212);
+    Prev_Button.setXY(188, 212);
     Prev_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_GO_BACK_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_GO_BACK_32_ID));
     Prev_Button.setIconXY(14, 15);
+    Prev_Button.setAction(buttonCallback);
 
-    Next_Button.setXY(308, 212);
+    Next_Button.setXY(256, 212);
     Next_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_GO_NEXT_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_GO_NEXT_32_ID));
     Next_Button.setIconXY(14, 15);
+    Next_Button.setAction(buttonCallback);
 
-    VolUp_Button.setXY(420, 212);
+    VolUp_Button.setXY(390, 212);
     VolUp_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     VolUp_Button.setLabelText(touchgfx::TypedText(T_SINGLEUSEID31));
     VolUp_Button.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     VolUp_Button.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    VolUp_Button.setAction(buttonCallback);
 
-    VolDown_Button.setXY(0, 212);
+    VolDown_Button.setXY(323, 212);
     VolDown_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     VolDown_Button.setLabelText(touchgfx::TypedText(T_SINGLEUSEID32));
     VolDown_Button.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     VolDown_Button.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    VolDown_Button.setAction(buttonCallback);
 
     Back_Button.setXY(0, 0);
     Back_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_BACK_ARROW_32_ID));
@@ -81,9 +87,51 @@ void MusicViewBase::setupScreen()
 
 void MusicViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &Back_Button)
+    if (&src == &Play_Button)
     {
-        //Interaction1
+        //control_play
+        //When Play_Button clicked call virtual function
+        //Call controlPlay
+        controlPlay();
+    }
+    else if (&src == &Stop_Button)
+    {
+        //control_stop
+        //When Stop_Button clicked call virtual function
+        //Call controlStop
+        controlStop();
+    }
+    else if (&src == &Prev_Button)
+    {
+        //control_prev
+        //When Prev_Button clicked call virtual function
+        //Call controlPrev
+        controlPrev();
+    }
+    else if (&src == &Next_Button)
+    {
+        //control_next
+        //When Next_Button clicked call virtual function
+        //Call controlNext
+        controlNext();
+    }
+    else if (&src == &VolUp_Button)
+    {
+        //control_volume_up
+        //When VolUp_Button clicked call virtual function
+        //Call controlVolumeUp
+        controlVolumeUp();
+    }
+    else if (&src == &VolDown_Button)
+    {
+        //control_volume_down
+        //When VolDown_Button clicked call virtual function
+        //Call controlVolumeDown
+        controlVolumeDown();
+    }
+    else if (&src == &Back_Button)
+    {
+        //back_to_menu
         //When Back_Button clicked change screen to screen
         //Go to screen with no screen transition
         application().gotoscreenScreenNoTransition();

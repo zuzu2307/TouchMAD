@@ -213,12 +213,12 @@
             "IconWidth": 23,
             "ButtonStyle": "Style9",
             "Name": "Play_Button",
-            "X": 116,
+            "X": 48,
             "Y": 212,
             "Width": 60,
             "Height": 60,
             "Type": "ButtonWithIcon",
-            "Visible": false,
+            "Visible": true,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -264,7 +264,7 @@
             "Width": 60,
             "Height": 60,
             "Type": "ButtonWithIcon",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -283,7 +283,7 @@
             "ButtonStyle": "Style9",
             "IconStyle": "Icon61",
             "Name": "Stop_Button",
-            "X": 180,
+            "X": 116,
             "Y": 212,
             "Width": 60,
             "Height": 60,
@@ -306,7 +306,7 @@
             "IconWidth": 32,
             "ButtonStyle": "Style9",
             "Name": "Prev_Button",
-            "X": 244,
+            "X": 188,
             "Y": 212,
             "Width": 60,
             "Height": 60,
@@ -329,7 +329,7 @@
             "IconWidth": 32,
             "ButtonStyle": "Style9",
             "Name": "Next_Button",
-            "X": 308,
+            "X": 256,
             "Y": 212,
             "Width": 60,
             "Height": 60,
@@ -358,7 +358,7 @@
             "TextRotation": "0",
             "Style": "Style9",
             "Name": "VolUp_Button",
-            "X": 420,
+            "X": 390,
             "Y": 212,
             "Width": 60,
             "Height": 60,
@@ -387,7 +387,7 @@
             "TextRotation": "0",
             "Style": "Style9",
             "Name": "VolDown_Button",
-            "X": 0,
+            "X": 323,
             "Y": 212,
             "Width": 60,
             "Height": 60,
@@ -424,7 +424,7 @@
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "back_to_menu",
             "HasCompletedTrigger": false,
             "Trigger": {
               "TriggerComponent": "Back_Button",
@@ -434,6 +434,78 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "screen",
               "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "control_play",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Play_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "controlPlay",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "control_stop",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Stop_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "controlStop",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "control_prev",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Prev_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "controlPrev",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "control_next",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Next_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "controlNext",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "control_volume_down",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "VolDown_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "controlVolumeDown",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "control_volume_up",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "VolUp_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "controlVolumeUp",
+              "Type": "ActionCustom"
             }
           }
         ],

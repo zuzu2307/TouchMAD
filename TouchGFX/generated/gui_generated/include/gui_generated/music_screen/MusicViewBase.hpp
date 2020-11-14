@@ -19,6 +19,39 @@ public:
     virtual ~MusicViewBase() {}
     virtual void setupScreen();
 
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void controlPlay()
+    {
+        // Override and implement this function in Music
+    }
+
+    virtual void controlStop()
+    {
+        // Override and implement this function in Music
+    }
+
+    virtual void controlPrev()
+    {
+        // Override and implement this function in Music
+    }
+
+    virtual void controlNext()
+    {
+        // Override and implement this function in Music
+    }
+
+    virtual void controlVolumeDown()
+    {
+        // Override and implement this function in Music
+    }
+
+    virtual void controlVolumeUp()
+    {
+        // Override and implement this function in Music
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
