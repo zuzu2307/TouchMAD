@@ -20,6 +20,7 @@ TouchGFXGeneratedHAL.hpp:103:18:virtual void TouchGFXGeneratedHAL::flushFrameBuf
 core_cm7.h:1896:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
 core_cm7.h:1932:22:void __NVIC_DisableIRQ(IRQn_Type)	16	static,ignoring_inline_asm
 core_cm7.h:2024:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 TouchGFXGeneratedHAL.cpp:33:6:void TouchGFXGeneratedHAL::initialize()	24	static
 TouchGFXGeneratedHAL.cpp:50:6:virtual void TouchGFXGeneratedHAL::configureInterrupts()	16	static
 TouchGFXGeneratedHAL.cpp:56:6:virtual void TouchGFXGeneratedHAL::enableInterrupts()	16	static

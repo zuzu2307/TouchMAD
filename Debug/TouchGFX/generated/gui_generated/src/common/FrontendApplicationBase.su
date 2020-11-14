@@ -59,6 +59,7 @@ ModelListener.hpp:13:10:void ModelListener::bind(Model*)	16	static
 Widget.hpp:39:7:touchgfx::Widget::Widget()	16	static
 Widget.hpp:39:7:touchgfx::Widget::~Widget()	16	static
 Widget.hpp:39:7:virtual touchgfx::Widget::~Widget()	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 FrontendApplicationBase.cpp:25:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
 Callback.hpp:178:7:constexpr touchgfx::GenericCallback<void>& touchgfx::GenericCallback<void>::operator=(const touchgfx::GenericCallback<void>&)	16	static
 Callback.hpp:430:8:constexpr touchgfx::Callback<FrontendApplicationBase>& touchgfx::Callback<FrontendApplicationBase>::operator=(touchgfx::Callback<FrontendApplicationBase>&&)	16	static

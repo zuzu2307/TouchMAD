@@ -10,6 +10,9 @@ PongView::PongView()
 void PongView::setupScreen()
 {
     PongViewBase::setupScreen();
+    color[0] = 6;
+    color[1] = 255;
+    color[2] = 141;
 }
 
 void PongView::tearDownScreen()
@@ -50,7 +53,7 @@ void PongView::move_ball(){\
 	ball.invalidate();
 	ball.setY(ball.getY() +  ball_vertical_direction*ball_speed);
 	ball.setX(ball.getX() +  ball_horizontal_direction*ball_speed);
-	ballPainter.setColor( touchgfx::Color::getColorFrom24BitRGB(6, 255, 141));
+	ballPainter.setColor( touchgfx::Color::getColorFrom24BitRGB(color[0], color[1], color[2]));
 	ball.invalidate();
 
 
@@ -63,6 +66,9 @@ void PongView::move_ball(){\
 			Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%d", sc);
 			score.invalidate();
 
+		    color[0] =  ( std::rand() % ( 255 + 1 ) );
+		    color[1] =  ( std::rand() % ( 255 + 1 ) );
+		    color[2] =  ( std::rand() % ( 255 + 1 ) );
 		}
 		collide_count ++;
 

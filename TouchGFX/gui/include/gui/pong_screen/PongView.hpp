@@ -5,6 +5,7 @@
 #include <gui_generated/pong_screen/PongViewBase.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
 #include <touchgfx/Color.hpp>
+#include <random>
 
 extern int pong_score;
 
@@ -33,6 +34,7 @@ private:
     int pos;
     int sc = 0;
     int collide_count = 0;
+    int color[3];
 
 };
 

@@ -37,6 +37,7 @@ FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendAppl
 FrontendApplication.hpp:14:13:FrontendApplication::~FrontendApplication()	16	static
 FrontendApplication.hpp:14:13:virtual FrontendApplication::~FrontendApplication()	16	static
 FrontendApplication.hpp:16:18:virtual void FrontendApplication::handleTickEvent()	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 FrontendHeapBase.hpp:100:18:virtual void FrontendHeapBase::gotoStartScreen(FrontendApplication&)	16	static
 FrontendHeapBase.hpp:105:5:FrontendHeapBase::FrontendHeapBase(touchgfx::AbstractPartition&, touchgfx::AbstractPartition&, touchgfx::AbstractPartition&, FrontendApplication&)	32	static
 FrontendHeap.hpp:56:29:void __tcf_0()	8	static
