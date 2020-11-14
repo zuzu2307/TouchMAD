@@ -236,10 +236,10 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Name": "textArea2",
-            "X": 0,
-            "Y": 105,
-            "Width": 480,
-            "Height": 31,
+            "X": 48,
+            "Y": 109,
+            "Width": 372,
+            "Height": 54,
             "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
@@ -434,54 +434,6 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "screen",
               "Type": "ActionGotoScreen"
-            }
-          },
-          {
-            "InteractionName": "Hide_Pause",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "Pause_Button",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ActionComponent": "Pause_Button",
-              "Type": "ActionHide"
-            }
-          },
-          {
-            "InteractionName": "Show_Play",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "Pause_Button",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ActionComponent": "Play_Button",
-              "Type": "ActionShow"
-            }
-          },
-          {
-            "InteractionName": "Hide_Play",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "Play_Button",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ActionComponent": "Play_Button",
-              "Type": "ActionHide"
-            }
-          },
-          {
-            "InteractionName": "Show_Pause",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "Play_Button",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "ActionComponent": "Pause_Button",
-              "Type": "ActionShow"
             }
           }
         ],

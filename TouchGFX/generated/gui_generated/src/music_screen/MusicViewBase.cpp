@@ -22,9 +22,8 @@ MusicViewBase::MusicViewBase() :
     Play_Button.setVisible(false);
     Play_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PLAY_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PLAY_32_ID));
     Play_Button.setIconXY(19, 14);
-    Play_Button.setAction(buttonCallback);
 
-    textArea2.setPosition(0, 105, 480, 31);
+    textArea2.setPosition(48, 109, 372, 54);
     textArea2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID30));
@@ -32,7 +31,6 @@ MusicViewBase::MusicViewBase() :
     Pause_Button.setXY(116, 212);
     Pause_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PAUSE_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PAUSE_32_ID));
     Pause_Button.setIconXY(17, 14);
-    Pause_Button.setAction(buttonCallback);
 
     Stop_Button.setXY(180, 212);
     Stop_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_STOP_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_STOP_32_ID));
@@ -83,35 +81,7 @@ void MusicViewBase::setupScreen()
 
 void MusicViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &Play_Button)
-    {
-        //Hide_Play
-        //When Play_Button clicked hide Play_Button
-        //Hide Play_Button
-        Play_Button.setVisible(false);
-        Play_Button.invalidate();
-
-        //Show_Pause
-        //When Play_Button clicked show Pause_Button
-        //Show Pause_Button
-        Pause_Button.setVisible(true);
-        Pause_Button.invalidate();
-    }
-    else if (&src == &Pause_Button)
-    {
-        //Hide_Pause
-        //When Pause_Button clicked hide Pause_Button
-        //Hide Pause_Button
-        Pause_Button.setVisible(false);
-        Pause_Button.invalidate();
-
-        //Show_Play
-        //When Pause_Button clicked show Play_Button
-        //Show Play_Button
-        Play_Button.setVisible(true);
-        Play_Button.invalidate();
-    }
-    else if (&src == &Back_Button)
+    if (&src == &Back_Button)
     {
         //Interaction1
         //When Back_Button clicked change screen to screen

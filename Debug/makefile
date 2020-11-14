@@ -52,10 +52,6 @@ RM := rm -rf
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/subdir.mk
--include Middlewares/Third_Party/FatFs/src/option/subdir.mk
--include Middlewares/Third_Party/FatFs/src/subdir.mk
--include FATFS/Target/subdir.mk
--include FATFS/App/subdir.mk
 -include Drivers/STM32F7xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -110,8 +106,8 @@ Test_IDE.bin \
 all: Test_IDE.elf secondary-outputs
 
 # Tool invocations
-Test_IDE.elf: $(OBJS) $(USER_OBJS) D:\project\STM32\MAD\workspace\Test_IDE\STM32F746NGHX_FLASH.ld
-	arm-none-eabi-g++ -o "Test_IDE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\project\STM32\MAD\workspace\Test_IDE\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Test_IDE.map" -Wl,--gc-sections -static -L"D:\project\STM32\MAD\workspace\Test_IDE\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Test_IDE.elf: $(OBJS) $(USER_OBJS) D:\Downloads\MAD\Touch_GFX_projects\Test_IDE\STM32F746NGHX_FLASH.ld
+	arm-none-eabi-g++ -o "Test_IDE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\Downloads\MAD\Touch_GFX_projects\Test_IDE\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Test_IDE.map" -Wl,--gc-sections -static -L"D:\Downloads\MAD\Touch_GFX_projects\Test_IDE\Middlewares\ST\touchgfx\lib\core\cortex_m7\gcc" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

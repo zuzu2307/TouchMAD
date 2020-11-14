@@ -39,11 +39,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
@@ -65,13 +61,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
- ../FATFS/App/fatfs.h ../Middlewares/Third_Party/FatFs/src/ff.h \
- ../Middlewares/Third_Party/FatFs/src/integer.h ../FATFS/Target/ffconf.h \
- ../FATFS/Target/bsp_driver_sd.h ../FATFS/Target/fatfs_platform.h \
- ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
- ../Middlewares/Third_Party/FatFs/src/diskio.h \
- ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- ../TouchGFX/App/app_touchgfx.h
+ ../TouchGFX/App/app_touchgfx.h \
+ D:/Downloads/MAD/Touch_GFX_projects/Test_IDE/STM32746G-Discovery/stm32746g_discovery.h \
+ ../Core/Inc/PollingRoutines.h ../Core/Inc/ControlMusic.h \
+ ../Core/Inc/main.h
 
 ../Core/Inc/main.h:
 
@@ -155,15 +148,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h:
-
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h:
-
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h:
-
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h:
-
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 
@@ -207,24 +192,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
 
-../FATFS/App/fatfs.h:
-
-../Middlewares/Third_Party/FatFs/src/ff.h:
-
-../Middlewares/Third_Party/FatFs/src/integer.h:
-
-../FATFS/Target/ffconf.h:
-
-../FATFS/Target/bsp_driver_sd.h:
-
-../FATFS/Target/fatfs_platform.h:
-
-../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h:
-
-../Middlewares/Third_Party/FatFs/src/diskio.h:
-
-../Middlewares/Third_Party/FatFs/src/ff.h:
-
-../FATFS/Target/sd_diskio.h:
-
 ../TouchGFX/App/app_touchgfx.h:
+
+D:/Downloads/MAD/Touch_GFX_projects/Test_IDE/STM32746G-Discovery/stm32746g_discovery.h:
+
+../Core/Inc/PollingRoutines.h:
+
+../Core/Inc/ControlMusic.h:
+
+../Core/Inc/main.h:
