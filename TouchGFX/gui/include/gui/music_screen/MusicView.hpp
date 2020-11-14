@@ -23,7 +23,7 @@ public:
     virtual void controlVolumeDown();
     virtual void controlVolumeUp();
 
-
+    virtual void updatePlayButton();
 
 protected:
 };

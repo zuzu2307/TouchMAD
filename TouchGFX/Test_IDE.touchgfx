@@ -264,7 +264,7 @@
             "IconWidth": 26,
             "ButtonStyle": "Style9",
             "Name": "Pause_Button",
-            "X": 116,
+            "X": 48,
             "Y": 212,
             "Width": 60,
             "Height": 60,
@@ -512,6 +512,18 @@
               "FunctionName": "controlVolumeUp",
               "Type": "ActionCustom"
             }
+          },
+          {
+            "InteractionName": "control_pause",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Pause_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "controlPlay",
+              "Type": "ActionCustom"
+            }
           }
         ],
         "Name": "Music",
@@ -736,7 +748,7 @@
             "Name": "score",
             "X": 363,
             "Y": 0,
-            "Width": 102,
+            "Width": 103,
             "Height": 25,
             "Type": "TextArea",
             "Visible": true,

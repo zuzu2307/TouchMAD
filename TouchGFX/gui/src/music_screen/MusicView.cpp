@@ -17,6 +17,7 @@ extern uint8_t uartMsgBuffer[UART_BUFF_SIZE];
 #include "ControlMusic.h"
 
 extern xQueueHandle music_msg_q;
+extern uint8_t isPlay;
 
 //----------------------------------------------
 
@@ -66,6 +67,7 @@ void MusicView::controlVolumeUp()
 
 void MusicView::sendControlQ(uint8_t signal){
 	xQueueSend(music_msg_q, &signal, 0);
+
 }
 
 void MusicView::updateFileName(){
@@ -79,6 +81,22 @@ void MusicView::updateFileName(){
 	MusicTextArea.invalidate();
 }
 
+void MusicView::updatePlayButton(){
+	if(isPlay==0){
+		Pause_Button.setVisible(false);
+		Pause_Button.invalidate();
+
+		Play_Button.setVisible(true);
+		Play_Button.invalidate();
+	}else{
+		Play_Button.setVisible(false);
+		Play_Button.invalidate();
+
+		Pause_Button.setVisible(true);
+		Pause_Button.invalidate();
+	}
+}
+
 // ------------ Tick ---------------
 void MusicView::handleTickEvent(){
 	if (binarySemMsgUartHandle != NULL)
@@ -88,4 +106,5 @@ void MusicView::handleTickEvent(){
 				updateFileName();
 			}
 		}
+	updatePlayButton();
 }

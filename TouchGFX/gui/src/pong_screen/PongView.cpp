@@ -98,7 +98,7 @@ void PongView::move_ball(){\
 
 int PongView::check_collision(){
 	// collide with paddle
-	if(ball.getY()+ball.getHeight()-margin>=paddle1.getY()-paddle1.getHeight() && ball.getX() + margin - 110 >= paddle1.getX() - paddle1.getWidth() && ball.getX() + margin <= paddle1.getX() + paddle1.getWidth()){
+	if( ball.getY()+ball.getHeight()-margin<=paddle1.getY()+paddle1.getHeight() && ball.getY()+ball.getHeight()-margin>=paddle1.getY()-paddle1.getHeight() && ball.getX() + margin - 110 >= paddle1.getX() - paddle1.getWidth() && ball.getX() + margin <= paddle1.getX() + paddle1.getWidth()){
 		return 1;
 	}
 
@@ -118,7 +118,7 @@ int PongView::check_collision(){
 	}
 
 	// collide with bottom
-	if(ball.getY() >= 270){
+	if(ball.getY() >= 250){
 		return 5;
 	}
 

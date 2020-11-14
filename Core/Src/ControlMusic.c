@@ -8,6 +8,9 @@
 xQueueHandle music_msg_q;
 uint8_t msg;
 
+
+uint8_t isPlay=0;
+
 //extern osSemaphoreId binarySemControlQHandle;
 
 void PollingControlMusicInit()
@@ -77,6 +80,10 @@ void PollingControlMusic()
 		vTaskDelay(2);
 		HAL_GPIO_WritePin(N3_GPIO_Port, N3_Pin, RESET);
 		//xSemaphoreGive(binarySemControlQHandle);
-
 	}
+
+	isPlay = (GPIOB->IDR >> 14) & 0x01;
+
+
+	osDelay(1);
 }

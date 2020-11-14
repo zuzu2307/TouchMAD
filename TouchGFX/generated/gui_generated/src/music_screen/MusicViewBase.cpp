@@ -30,10 +30,11 @@ MusicViewBase::MusicViewBase() :
     MusicTextArea.setWildcard(MusicTextAreaBuffer);
     MusicTextArea.setTypedText(touchgfx::TypedText(T_SINGLEUSEID30));
 
-    Pause_Button.setXY(116, 212);
+    Pause_Button.setXY(48, 212);
     Pause_Button.setVisible(false);
     Pause_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PAUSE_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_PAUSE_32_ID));
     Pause_Button.setIconXY(17, 14);
+    Pause_Button.setAction(buttonCallback);
 
     Stop_Button.setXY(116, 212);
     Stop_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_STOP_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_STOP_32_ID));
@@ -93,6 +94,13 @@ void MusicViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     {
         //control_play
         //When Play_Button clicked call virtual function
+        //Call controlPlay
+        controlPlay();
+    }
+    else if (&src == &Pause_Button)
+    {
+        //control_pause
+        //When Pause_Button clicked call virtual function
         //Call controlPlay
         controlPlay();
     }

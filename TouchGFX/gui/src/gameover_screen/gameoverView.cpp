@@ -8,7 +8,7 @@ gameoverView::gameoverView()
 void gameoverView::setupScreen()
 {
     gameoverViewBase::setupScreen();
-	Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%d", pong_score);
+	Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%d", 10*pong_score);
 	score.invalidate();
 }
 

@@ -1,3 +1,3 @@
-ControlMusic.c:13:6:PollingControlMusicInit	8	static
-ControlMusic.c:25:6:signalOut	24	static
-ControlMusic.c:68:6:PollingControlMusic	8	static
+ControlMusic.c:16:6:PollingControlMusicInit	8	static
+ControlMusic.c:28:6:signalOut	24	static
+ControlMusic.c:71:6:PollingControlMusic	8	static
