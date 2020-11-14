@@ -334,6 +334,8 @@ void Error_Handler(void);
 #define FMC_D10_GPIO_Port GPIOE
 #define ULPI_D4_Pin GPIO_PIN_11
 #define ULPI_D4_GPIO_Port GPIOB
+#define Play_IN_Pin GPIO_PIN_14
+#define Play_IN_GPIO_Port GPIOB
 #define N3_Pin GPIO_PIN_15
 #define N3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */

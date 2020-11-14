@@ -1192,6 +1192,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF10_OTG_HS;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : Play_IN_Pin */
+  GPIO_InitStruct.Pin = Play_IN_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(Play_IN_GPIO_Port, &GPIO_InitStruct);
+
   /*Configure GPIO pin : N3_Pin */
   GPIO_InitStruct.Pin = N3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
