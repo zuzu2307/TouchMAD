@@ -20,6 +20,8 @@ public:
 
     void gotoscreenScreenSlideTransitionEast();
 
+    void gotoscreenScreenCoverTransitionEast();
+
     // Music
     void gotoMusicScreenNoTransition();
 
@@ -31,6 +33,9 @@ public:
 
     void gotoPongScreenNoTransition();
 
+    // gallery
+    void gotogalleryScreenCoverTransitionEast();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -40,6 +45,8 @@ protected:
     void gotoscreenScreenNoTransitionImpl();
 
     void gotoscreenScreenSlideTransitionEastImpl();
+
+    void gotoscreenScreenCoverTransitionEastImpl();
 
     // Music
     void gotoMusicScreenNoTransitionImpl();
@@ -51,6 +58,9 @@ protected:
     void gotoPongScreenCoverTransitionEastImpl();
 
     void gotoPongScreenNoTransitionImpl();
+
+    // gallery
+    void gotogalleryScreenCoverTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

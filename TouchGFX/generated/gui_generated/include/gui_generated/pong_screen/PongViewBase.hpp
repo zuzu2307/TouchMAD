@@ -7,11 +7,13 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
-#include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB888.hpp>
+#include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
+#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/mixins/Draggable.hpp>
 #include <touchgfx/EasingEquations.hpp>
 #include <touchgfx/mixins/MoveAnimator.hpp>
@@ -31,12 +33,13 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::Box background;
+    touchgfx::Image image1;
     touchgfx::MoveAnimator< touchgfx::Circle > ball;
     touchgfx::PainterRGB888 ballPainter;
     touchgfx::Draggable< touchgfx::Box > paddle1;
     touchgfx::TextAreaWithOneWildcard score;
     touchgfx::ButtonWithIcon Back_Button;
+    touchgfx::Button button1;
 
     /*
      * Wildcard Buffers

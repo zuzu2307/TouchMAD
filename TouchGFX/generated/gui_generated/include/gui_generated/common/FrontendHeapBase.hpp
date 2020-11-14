@@ -10,10 +10,12 @@
 #include <touchgfx/transitions/NoTransition.hpp>
 #include <touchgfx/transitions/CoverTransition.hpp>
 
-
+#include <touchgfx/transitions/CoverTransition.hpp>
 
 
 #include <touchgfx/transitions/SlideTransition.hpp>
+
+#include <touchgfx/transitions/CoverTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
@@ -26,6 +28,8 @@
 #include <gui/gameover_screen/gameoverPresenter.hpp>
 #include <gui/pong_screen/PongView.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
+#include <gui/gallery_screen/galleryView.hpp>
+#include <gui/gallery_screen/galleryPresenter.hpp>
 
 
 /**
@@ -52,7 +56,8 @@ public:
             touchgfx::meta::TypeList< MusicView,
             touchgfx::meta::TypeList< gameoverView,
             touchgfx::meta::TypeList< PongView,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< galleryView,
+            touchgfx::meta::Nil > > > >
             > GeneratedViewTypes;
 
     /**
@@ -68,7 +73,8 @@ public:
             touchgfx::meta::TypeList< MusicPresenter,
             touchgfx::meta::TypeList< gameoverPresenter,
             touchgfx::meta::TypeList< PongPresenter,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< galleryPresenter,
+            touchgfx::meta::Nil > > > >
             > GeneratedPresenterTypes;
 
     /**

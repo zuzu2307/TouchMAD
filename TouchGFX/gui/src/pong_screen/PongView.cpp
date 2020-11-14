@@ -50,7 +50,7 @@ void PongView::move_ball(){\
 	ball.invalidate();
 	ball.setY(ball.getY() +  ball_vertical_direction*ball_speed);
 	ball.setX(ball.getX() +  ball_horizontal_direction*ball_speed);
-	ballPainter.setColor( touchgfx::Color::getColorFrom24BitRGB(6, 128, 255));
+	ballPainter.setColor( touchgfx::Color::getColorFrom24BitRGB(6, 255, 141));
 	ball.invalidate();
 
 

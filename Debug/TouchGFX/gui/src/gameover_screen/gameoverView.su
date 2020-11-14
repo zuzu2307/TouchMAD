@@ -34,8 +34,8 @@ TextArea.hpp:44:7:touchgfx::TextArea::~TextArea()	16	static
 TextArea.hpp:44:7:virtual touchgfx::TextArea::~TextArea()	16	static
 View.hpp:40:7:touchgfx::View<gameoverPresenter>::~View()	16	static
 View.hpp:40:7:virtual touchgfx::View<gameoverPresenter>::~View()	16	static
-gameoverViewBase.hpp:19:13:gameoverViewBase::~gameoverViewBase()	16	static
-gameoverViewBase.hpp:19:13:virtual gameoverViewBase::~gameoverViewBase()	16	static
+gameoverViewBase.hpp:20:13:gameoverViewBase::~gameoverViewBase()	16	static
+gameoverViewBase.hpp:20:13:virtual gameoverViewBase::~gameoverViewBase()	16	static
 gameoverView.hpp:12:13:gameoverView::~gameoverView()	16	static
 gameoverView.hpp:12:13:virtual gameoverView::~gameoverView()	16	static
 gameoverView.cpp:3:1:gameoverView::gameoverView()	16	static

@@ -208,6 +208,18 @@
     <Filter Include="Header Files\generated\gui_generated\gameover_screen">
       <UniqueIdentifier>4E6CC42E-795E-7CF6-AC8D-75DECAA00418</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\gallery_screen">
+      <UniqueIdentifier>EA0522A5-3E85-F5FD-B192-B6140AA9CB57</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\gallery_screen">
+      <UniqueIdentifier>8E8CD1DF-6C13-E546-BCA6-2F0C87CE5A18</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\gallery_screen">
+      <UniqueIdentifier>023F78DF-3107-D427-A9C4-71E9BC343BD8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\gallery_screen">
+      <UniqueIdentifier>9E3B2F92-4921-D138-8498-ACCA8DD9BCB4</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -272,6 +284,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\gameover_screen\gameoverViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\gameover_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\gallery_screen\galleryPresenter.cpp">
+      <Filter>Source Files\gui\gallery_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\gallery_screen\galleryView.cpp">
+      <Filter>Source Files\gui\gallery_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\gallery_screen\galleryViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\gallery_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -741,6 +762,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gameover_screen\gameoverViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\gameover_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\gallery_screen\galleryPresenter.hpp">
+      <Filter>Header Files\gui\gallery_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\gallery_screen\galleryView.hpp">
+      <Filter>Header Files\gui\gallery_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gallery_screen\galleryViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\gallery_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

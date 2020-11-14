@@ -32,6 +32,9 @@
     <ClCompile Include="..\..\gui\src\gameover_screen\gameoverPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\gameover_screen\gameoverView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\gameover_screen\gameoverViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\gallery_screen\galleryPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\gallery_screen\galleryView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\gallery_screen\galleryViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -191,6 +194,9 @@
     <ClInclude Include="..\..\gui\include\gui\gameover_screen\gameoverPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\gameover_screen\gameoverView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gameover_screen\gameoverViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\gallery_screen\galleryPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\gallery_screen\galleryView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gallery_screen\galleryViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

@@ -33,10 +33,14 @@ gameoverViewBase::gameoverViewBase() :
     score.resizeToCurrentText();
     score.setTypedText(touchgfx::TypedText(T_SINGLEUSEID34));
 
+    button1.setXY(569, -60);
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+
     add(bg);
     add(buttonWithLabel1);
     add(gameover_text);
     add(score);
+    add(button1);
 }
 
 void gameoverViewBase::setupScreen()

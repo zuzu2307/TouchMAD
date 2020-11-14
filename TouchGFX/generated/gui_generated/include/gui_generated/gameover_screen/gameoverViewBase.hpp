@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/Button.hpp>
 
 class gameoverViewBase : public touchgfx::View<gameoverPresenter>
 {
@@ -31,6 +32,7 @@ protected:
     touchgfx::ButtonWithLabel buttonWithLabel1;
     touchgfx::TextArea gameover_text;
     touchgfx::TextAreaWithOneWildcard score;
+    touchgfx::Button button1;
 
     /*
      * Wildcard Buffers

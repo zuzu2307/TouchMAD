@@ -122,6 +122,7 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
  ../TouchGFX/generated/gui_generated/include/gui_generated/pong_screen/PongViewBase.hpp \
  ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
@@ -140,6 +141,9 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ ../TouchGFX/gui/include/gui/gallery_screen/galleryView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/gallery_screen/galleryViewBase.hpp \
+ ../TouchGFX/gui/include/gui/gallery_screen/galleryPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp
 
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
@@ -388,6 +392,8 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 
 ../TouchGFX/gui/include/gui/pong_screen/PongPresenter.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
@@ -423,5 +429,11 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/Draggable.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
+
+../TouchGFX/gui/include/gui/gallery_screen/galleryView.hpp:
+
+../TouchGFX/generated/gui_generated/include/gui_generated/gallery_screen/galleryViewBase.hpp:
+
+../TouchGFX/gui/include/gui/gallery_screen/galleryPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:

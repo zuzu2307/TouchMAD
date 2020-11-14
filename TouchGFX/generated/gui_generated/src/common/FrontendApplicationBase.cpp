@@ -17,6 +17,8 @@
 #include <gui/gameover_screen/gameoverPresenter.hpp>
 #include <gui/pong_screen/PongView.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
+#include <gui/gallery_screen/galleryView.hpp>
+#include <gui/gallery_screen/galleryPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -57,6 +59,17 @@ void FrontendApplicationBase::gotoscreenScreenSlideTransitionEast()
 void FrontendApplicationBase::gotoscreenScreenSlideTransitionEastImpl()
 {
     touchgfx::makeTransition<screenView, screenPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoscreenScreenCoverTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoscreenScreenCoverTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoscreenScreenCoverTransitionEastImpl()
+{
+    touchgfx::makeTransition<screenView, screenPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // Music
@@ -107,4 +120,17 @@ void FrontendApplicationBase::gotoPongScreenNoTransition()
 void FrontendApplicationBase::gotoPongScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<PongView, PongPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// gallery
+
+void FrontendApplicationBase::gotogalleryScreenCoverTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotogalleryScreenCoverTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotogalleryScreenCoverTransitionEastImpl()
+{
+    touchgfx::makeTransition<galleryView, galleryPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

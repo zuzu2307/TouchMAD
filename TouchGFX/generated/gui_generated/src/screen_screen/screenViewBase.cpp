@@ -64,8 +64,8 @@ void screenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     else if (&src == &buttonWithLabel3)
     {
         //Interaction3
-        //When buttonWithLabel3 clicked change screen to gameover
-        //Go to gameover with no screen transition
-        application().gotogameoverScreenNoTransition();
+        //When buttonWithLabel3 clicked change screen to gallery
+        //Go to gallery with screen transition towards East
+        application().gotogalleryScreenCoverTransitionEast();
     }
 }

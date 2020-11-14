@@ -146,8 +146,9 @@
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "gameover",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "gallery",
               "Type": "ActionGotoScreen"
             }
           }
@@ -587,6 +588,23 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button1",
+            "X": 569,
+            "Y": -60,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
@@ -611,18 +629,14 @@
       {
         "Components": [
           {
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
+            "RelativeFilename": "s.png",
             "Alpha": 255,
-            "Name": "background",
+            "Name": "image1",
             "X": 0,
             "Y": 0,
-            "Width": 480,
+            "Width": 500,
             "Height": 272,
-            "Type": "Box",
+            "Type": "Image",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -632,8 +646,8 @@
           {
             "Color": {
               "Red": 6,
-              "Green": 128,
-              "Blue": 255
+              "Green": 255,
+              "Blue": 141
             },
             "CenterX": 40,
             "CenterY": 40,
@@ -657,9 +671,9 @@
           },
           {
             "Color": {
-              "Red": 6,
-              "Green": 128,
-              "Blue": 255
+              "Red": 255,
+              "Green": 171,
+              "Blue": 6
             },
             "Alpha": 255,
             "Name": "paddle1",
@@ -678,9 +692,9 @@
             "TextId": "SingleUseId28",
             "TextRotation": "0",
             "Color": {
-              "Red": 0,
-              "Green": 173,
-              "Blue": 173
+              "Red": 18,
+              "Green": 252,
+              "Blue": 62
             },
             "Alpha": 255,
             "AutoSize": true,
@@ -691,7 +705,7 @@
               "BufferSize": 20
             },
             "Name": "score",
-            "X": 299,
+            "X": 363,
             "Y": 0,
             "Width": 102,
             "Height": 25,
@@ -719,6 +733,23 @@
             "Width": 60,
             "Height": 60,
             "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button1",
+            "X": 636,
+            "Y": -35,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -773,11 +804,127 @@
               "FunctionName": "move_right",
               "Type": "ActionCustom"
             }
+          },
+          {
+            "InteractionName": "over",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "button1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "gameover",
+              "Type": "ActionGotoScreen"
+            }
           }
         ],
         "Name": "Pong",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 7200
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 74,
+              "Green": 94,
+              "Blue": 92
+            },
+            "Alpha": 255,
+            "Name": "bg",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Dark_Icons_Back_arrow_32.png",
+            "IconReleased": "__designer\\Dark_Icons_Back_arrow_32.png",
+            "IconX": 19,
+            "IconY": 15,
+            "IconHeight": 32,
+            "IconWidth": 19,
+            "ButtonStyle": "Style5",
+            "Name": "Back_Button",
+            "X": 0,
+            "Y": 0,
+            "Width": 60,
+            "Height": 60,
+            "Type": "ButtonWithIcon",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "coolteam.png",
+            "Alpha": 255,
+            "Name": "image1",
+            "X": 90,
+            "Y": 52,
+            "Width": 300,
+            "Height": 168,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId36",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 14,
+              "Green": 255,
+              "Blue": 120
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 188,
+            "Y": 18,
+            "Width": 104,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "back",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "Back_Button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "screen",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "gallery",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
       }
     ],
     "CustomContainerDefinitions": [],
@@ -864,6 +1011,10 @@
       },
       {
         "TextEntryId": "SingleUseId35",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId36",
         "IsResource": false
       }
     ],
