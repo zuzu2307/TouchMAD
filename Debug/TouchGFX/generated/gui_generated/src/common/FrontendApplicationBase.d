@@ -64,10 +64,10 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../TouchGFX/gui/include/gui/gameover_screen/gameoverView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/gameoverViewBase.hpp \
  ../TouchGFX/gui/include/gui/gameover_screen/gameoverPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  ../Core/Inc/stm32f7xx_hal_conf.h \
@@ -269,13 +269,13 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
 ../TouchGFX/gui/include/gui/gameover_screen/gameoverView.hpp:
 
 ../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/gameoverViewBase.hpp:
 
 ../TouchGFX/gui/include/gui/gameover_screen/gameoverPresenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../TouchGFX/gui/include/gui/pong_screen/PongView.hpp:
 

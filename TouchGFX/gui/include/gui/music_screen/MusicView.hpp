@@ -13,6 +13,7 @@ public:
     virtual void tearDownScreen();
 
     virtual void handleTickEvent();
+    virtual void updateFileName();
 
     virtual void sendControlQ(uint8_t signal);
     virtual void controlPlay();
@@ -21,6 +22,8 @@ public:
     virtual void controlNext();
     virtual void controlVolumeDown();
     virtual void controlVolumeUp();
+
+
 
 protected:
 };

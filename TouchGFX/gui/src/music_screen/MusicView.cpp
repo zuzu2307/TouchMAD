@@ -68,7 +68,24 @@ void MusicView::sendControlQ(uint8_t signal){
 	xQueueSend(music_msg_q, &signal, 0);
 }
 
+void MusicView::updateFileName(){
+	if (uartMsgBuffer[0] == 0)
+		return; // array empty so return
+
+	memset(&MusicTextAreaBuffer, 0, MUSICTEXTAREA_SIZE);
+
+	Unicode::strncpy(MusicTextAreaBuffer, (char *)uartMsgBuffer, MUSICTEXTAREA_SIZE - 1);
+	MusicTextAreaBuffer[16] = '\0'; // last index must be NULL
+	MusicTextArea.invalidate();
+}
+
 // ------------ Tick ---------------
 void MusicView::handleTickEvent(){
-
+	if (binarySemMsgUartHandle != NULL)
+		{
+			if (xSemaphoreTake(binarySemMsgUartHandle, (TickType_t)10) == pdTRUE)
+			{
+				updateFileName();
+			}
+		}
 }

@@ -235,10 +235,15 @@
             "Alpha": 255,
             "AutoSize": false,
             "LineSpacing": 0,
-            "Name": "textArea2",
-            "X": 48,
+            "Wildcard1": {
+              "TextId": "SingleUseId37",
+              "UseBuffer": true,
+              "BufferSize": 17
+            },
+            "Name": "MusicTextArea",
+            "X": 60,
             "Y": 109,
-            "Width": 372,
+            "Width": 379,
             "Height": 54,
             "Type": "TextArea",
             "Visible": true,
@@ -1039,6 +1044,10 @@
       },
       {
         "TextEntryId": "SingleUseId36",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId37",
         "IsResource": false
       }
     ],

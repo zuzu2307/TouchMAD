@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class MusicViewBase : public touchgfx::View<MusicPresenter>
@@ -63,7 +64,7 @@ protected:
     touchgfx::Box box1;
     touchgfx::TextArea textArea1;
     touchgfx::ButtonWithIcon Play_Button;
-    touchgfx::TextArea textArea2;
+    touchgfx::TextAreaWithOneWildcard MusicTextArea;
     touchgfx::ButtonWithIcon Pause_Button;
     touchgfx::ButtonWithIcon Stop_Button;
     touchgfx::ButtonWithIcon Prev_Button;
@@ -71,6 +72,12 @@ protected:
     touchgfx::ButtonWithLabel VolUp_Button;
     touchgfx::ButtonWithLabel VolDown_Button;
     touchgfx::ButtonWithIcon Back_Button;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t MUSICTEXTAREA_SIZE = 17;
+    touchgfx::Unicode::UnicodeChar MusicTextAreaBuffer[MUSICTEXTAREA_SIZE];
 
 private:
 

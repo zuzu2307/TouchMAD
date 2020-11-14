@@ -23,10 +23,12 @@ MusicViewBase::MusicViewBase() :
     Play_Button.setIconXY(19, 14);
     Play_Button.setAction(buttonCallback);
 
-    textArea2.setPosition(48, 109, 372, 54);
-    textArea2.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    textArea2.setLinespacing(0);
-    textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID30));
+    MusicTextArea.setPosition(60, 109, 379, 54);
+    MusicTextArea.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    MusicTextArea.setLinespacing(0);
+    Unicode::snprintf(MusicTextAreaBuffer, MUSICTEXTAREA_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID37).getText());
+    MusicTextArea.setWildcard(MusicTextAreaBuffer);
+    MusicTextArea.setTypedText(touchgfx::TypedText(T_SINGLEUSEID30));
 
     Pause_Button.setXY(116, 212);
     Pause_Button.setVisible(false);
@@ -70,7 +72,7 @@ MusicViewBase::MusicViewBase() :
     add(box1);
     add(textArea1);
     add(Play_Button);
-    add(textArea2);
+    add(MusicTextArea);
     add(Pause_Button);
     add(Stop_Button);
     add(Prev_Button);

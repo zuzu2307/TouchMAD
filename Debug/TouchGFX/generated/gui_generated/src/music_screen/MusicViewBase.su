@@ -48,6 +48,10 @@ TextArea.hpp:47:5:touchgfx::TextArea::TextArea()	16	static
 ButtonWithIcon.hpp:81:10:void touchgfx::ButtonWithIcon::setIconX(int16_t)	16	static
 ButtonWithIcon.hpp:96:10:void touchgfx::ButtonWithIcon::setIconY(int16_t)	16	static
 ButtonWithIcon.hpp:113:10:void touchgfx::ButtonWithIcon::setIconXY(int16_t, int16_t)	16	static
+TextArea.hpp:44:7:touchgfx::TextArea::~TextArea()	16	static
+TextArea.hpp:44:7:virtual touchgfx::TextArea::~TextArea()	16	static
+TextAreaWithWildcard.hpp:40:5:touchgfx::TextAreaWithOneWildcard::TextAreaWithOneWildcard()	16	static
+TextAreaWithWildcard.hpp:61:10:void touchgfx::TextAreaWithOneWildcard::setWildcard(const UnicodeChar*)	16	static
 TypedText.hpp:44:7:constexpr touchgfx::TypedText& touchgfx::TypedText::operator=(const touchgfx::TypedText&)	16	static
 ButtonWithLabel.hpp:52:10:void touchgfx::ButtonWithLabel::setLabelText(touchgfx::TypedText)	16	static
 ButtonWithLabel.hpp:79:10:void touchgfx::ButtonWithLabel::setLabelColor(touchgfx::colortype)	16	static
@@ -55,19 +59,19 @@ ButtonWithLabel.hpp:122:10:void touchgfx::ButtonWithLabel::setLabelColorPressed(
 ButtonWithLabel.hpp:187:10:void touchgfx::ButtonWithLabel::updateTextPosition()	56	static
 View.hpp:40:7:touchgfx::View<MusicPresenter>::~View()	16	static
 View.hpp:40:7:virtual touchgfx::View<MusicPresenter>::~View()	16	static
-MusicViewBase.hpp:19:13:MusicViewBase::~MusicViewBase()	16	static
-MusicViewBase.hpp:19:13:virtual MusicViewBase::~MusicViewBase()	16	static
-MusicViewBase.hpp:25:18:virtual void MusicViewBase::controlPlay()	16	static
-MusicViewBase.hpp:30:18:virtual void MusicViewBase::controlStop()	16	static
-MusicViewBase.hpp:35:18:virtual void MusicViewBase::controlPrev()	16	static
-MusicViewBase.hpp:40:18:virtual void MusicViewBase::controlNext()	16	static
-MusicViewBase.hpp:45:18:virtual void MusicViewBase::controlVolumeDown()	16	static
-MusicViewBase.hpp:50:18:virtual void MusicViewBase::controlVolumeUp()	16	static
-MusicViewBase.hpp:56:26:FrontendApplication& MusicViewBase::application()	16	static
+MusicViewBase.hpp:20:13:MusicViewBase::~MusicViewBase()	16	static
+MusicViewBase.hpp:20:13:virtual MusicViewBase::~MusicViewBase()	16	static
+MusicViewBase.hpp:26:18:virtual void MusicViewBase::controlPlay()	16	static
+MusicViewBase.hpp:31:18:virtual void MusicViewBase::controlStop()	16	static
+MusicViewBase.hpp:36:18:virtual void MusicViewBase::controlPrev()	16	static
+MusicViewBase.hpp:41:18:virtual void MusicViewBase::controlNext()	16	static
+MusicViewBase.hpp:46:18:virtual void MusicViewBase::controlVolumeDown()	16	static
+MusicViewBase.hpp:51:18:virtual void MusicViewBase::controlVolumeUp()	16	static
+MusicViewBase.hpp:57:26:FrontendApplication& MusicViewBase::application()	16	static
 Color.hpp:51:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
-MusicViewBase.cpp:9:1:MusicViewBase::MusicViewBase()	216	static
-MusicViewBase.cpp:83:6:virtual void MusicViewBase::setupScreen()	16	static
-MusicViewBase.cpp:88:6:void MusicViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+MusicViewBase.cpp:9:1:MusicViewBase::MusicViewBase()	232	static
+MusicViewBase.cpp:85:6:virtual void MusicViewBase::setupScreen()	16	static
+MusicViewBase.cpp:90:6:void MusicViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 View.hpp:43:5:touchgfx::View<T>::View() [with T = MusicPresenter]	16	static
 Callback.hpp:137:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	16	static
 Callback.hpp:378:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = MusicViewBase; T1 = const touchgfx::AbstractButton&]	24	static
@@ -79,12 +83,12 @@ Container.hpp:42:7:touchgfx::Container::~Container()	16	static
 Container.hpp:42:7:virtual touchgfx::Container::~Container()	16	static
 Box.hpp:36:7:touchgfx::Box::~Box()	16	static
 Box.hpp:36:7:virtual touchgfx::Box::~Box()	16	static
-TextArea.hpp:44:7:touchgfx::TextArea::~TextArea()	16	static
-TextArea.hpp:44:7:virtual touchgfx::TextArea::~TextArea()	16	static
 Button.hpp:33:7:touchgfx::Button::~Button()	16	static
 Button.hpp:33:7:virtual touchgfx::Button::~Button()	16	static
 ButtonWithIcon.hpp:36:7:touchgfx::ButtonWithIcon::~ButtonWithIcon()	16	static
 ButtonWithIcon.hpp:36:7:virtual touchgfx::ButtonWithIcon::~ButtonWithIcon()	16	static
+TextAreaWithWildcard.hpp:37:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
+TextAreaWithWildcard.hpp:37:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 ButtonWithLabel.hpp:40:7:touchgfx::ButtonWithLabel::~ButtonWithLabel()	16	static
 ButtonWithLabel.hpp:40:7:virtual touchgfx::ButtonWithLabel::~ButtonWithLabel()	16	static
 Callback.hpp:392:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = MusicViewBase; T1 = const touchgfx::AbstractButton&]	16	static
