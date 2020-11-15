@@ -5,9 +5,9 @@
         "Components": [
           {
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 138,
+              "Green": 219,
+              "Blue": 0
             },
             "Alpha": 255,
             "Name": "box1",
@@ -41,7 +41,7 @@
             "Style": "Style4",
             "Name": "buttonWithLabel1",
             "X": 155,
-            "Y": 18,
+            "Y": 70,
             "Width": 170,
             "Height": 60,
             "Type": "ButtonWithLabel",
@@ -70,7 +70,7 @@
             "Style": "Style4",
             "Name": "buttonWithLabel2",
             "X": 155,
-            "Y": 106,
+            "Y": 136,
             "Width": 170,
             "Height": 60,
             "Type": "ButtonWithLabel",
@@ -99,10 +99,33 @@
             "Style": "Style4",
             "Name": "buttonWithLabel3",
             "X": 155,
-            "Y": 197,
+            "Y": 203,
             "Width": 170,
             "Height": 60,
             "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId38",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 95,
+            "Y": 20,
+            "Width": 327,
+            "Height": 35,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -161,9 +184,9 @@
         "Components": [
           {
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 240,
+              "Green": 142,
+              "Blue": 18
             },
             "Alpha": 255,
             "Name": "box1",
@@ -190,8 +213,8 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "textArea1",
-            "X": 116,
-            "Y": 0,
+            "X": 132,
+            "Y": 6,
             "Width": 249,
             "Height": 49,
             "Type": "TextArea",
@@ -241,7 +264,7 @@
               "BufferSize": 17
             },
             "Name": "MusicTextArea",
-            "X": 60,
+            "X": 67,
             "Y": 109,
             "Width": 379,
             "Height": 54,
@@ -913,7 +936,7 @@
             "Alpha": 255,
             "Name": "image1",
             "X": 90,
-            "Y": 52,
+            "Y": 60,
             "Width": 300,
             "Height": 168,
             "Type": "Image",
@@ -1060,6 +1083,10 @@
       },
       {
         "TextEntryId": "SingleUseId37",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId38",
         "IsResource": false
       }
     ],

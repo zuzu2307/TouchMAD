@@ -61,10 +61,10 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../TouchGFX/gui/include/gui/music_screen/MusicView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/music_screen/MusicViewBase.hpp \
  ../TouchGFX/gui/include/gui/music_screen/MusicPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../TouchGFX/gui/include/gui/gameover_screen/gameoverView.hpp \
@@ -270,13 +270,13 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
 ../TouchGFX/gui/include/gui/music_screen/MusicView.hpp:
 
 ../TouchGFX/generated/gui_generated/include/gui_generated/music_screen/MusicViewBase.hpp:
 
 ../TouchGFX/gui/include/gui/music_screen/MusicPresenter.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 

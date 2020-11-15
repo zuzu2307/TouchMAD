@@ -18,7 +18,7 @@ galleryViewBase::galleryViewBase() :
     Back_Button.setIconXY(19, 15);
     Back_Button.setAction(buttonCallback);
 
-    image1.setXY(90, 52);
+    image1.setXY(90, 60);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_COOLTEAM_ID));
 
     textArea1.setXY(188, 18);
