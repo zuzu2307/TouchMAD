@@ -9,6 +9,7 @@
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -29,6 +30,7 @@ protected:
     touchgfx::ButtonWithLabel buttonWithLabel1;
     touchgfx::ButtonWithLabel buttonWithLabel2;
     touchgfx::ButtonWithLabel buttonWithLabel3;
+    touchgfx::TextArea textArea1;
 
 private:
 

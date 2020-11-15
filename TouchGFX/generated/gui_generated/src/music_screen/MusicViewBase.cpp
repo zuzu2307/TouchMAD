@@ -11,9 +11,9 @@ MusicViewBase::MusicViewBase() :
 {
 
     box1.setPosition(0, 0, 480, 272);
-    box1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    box1.setColor(touchgfx::Color::getColorFrom24BitRGB(240, 142, 18));
 
-    textArea1.setXY(116, 0);
+    textArea1.setXY(132, 6);
     textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID18));
@@ -23,7 +23,7 @@ MusicViewBase::MusicViewBase() :
     Play_Button.setIconXY(19, 14);
     Play_Button.setAction(buttonCallback);
 
-    MusicTextArea.setPosition(60, 109, 379, 54);
+    MusicTextArea.setPosition(67, 109, 379, 54);
     MusicTextArea.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     MusicTextArea.setLinespacing(0);
     Unicode::snprintf(MusicTextAreaBuffer, MUSICTEXTAREA_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID37).getText());
