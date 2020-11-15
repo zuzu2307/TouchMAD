@@ -11,25 +11,31 @@ galleryViewBase::galleryViewBase() :
 {
 
     bg.setPosition(0, 0, 480, 272);
-    bg.setColor(touchgfx::Color::getColorFrom24BitRGB(74, 94, 92));
+    bg.setColor(touchgfx::Color::getColorFrom24BitRGB(29, 166, 152));
 
     Back_Button.setXY(0, 0);
     Back_Button.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_DARK_ICONS_BACK_ARROW_32_ID));
     Back_Button.setIconXY(19, 15);
     Back_Button.setAction(buttonCallback);
 
-    image1.setXY(90, 60);
+    image1.setXY(21, 66);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_COOLTEAM_ID));
 
     textArea1.setXY(188, 18);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(14, 255, 120));
+    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID36));
+
+    textArea2.setPosition(329, 76, 141, 84);
+    textArea2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    textArea2.setLinespacing(0);
+    textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID39));
 
     add(bg);
     add(Back_Button);
     add(image1);
     add(textArea1);
+    add(textArea2);
 }
 
 void galleryViewBase::setupScreen()

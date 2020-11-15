@@ -50,6 +50,8 @@ TouchGFX/build/MINGW32_NT-6.2/generated/images/src/__designer \
 TouchGFX/build/MINGW32_NT-6.2/generated/simulator/src \
 TouchGFX/build/MINGW32_NT-6.2/generated/texts/src \
 TouchGFX/build/MINGW32_NT-6.2/gui/src/common \
+TouchGFX/build/MINGW32_NT-6.2/gui/src/gallery_screen \
+TouchGFX/build/MINGW32_NT-6.2/gui/src/gameover_screen \
 TouchGFX/build/MINGW32_NT-6.2/gui/src/model \
 TouchGFX/build/MINGW32_NT-6.2/gui/src/music_screen \
 TouchGFX/build/MINGW32_NT-6.2/gui/src/pong_screen \

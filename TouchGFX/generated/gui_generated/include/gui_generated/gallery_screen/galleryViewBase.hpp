@@ -31,6 +31,7 @@ protected:
     touchgfx::ButtonWithIcon Back_Button;
     touchgfx::Image image1;
     touchgfx::TextArea textArea1;
+    touchgfx::TextArea textArea2;
 
 private:
 

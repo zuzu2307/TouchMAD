@@ -35,6 +35,8 @@ RM := rm -rf
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/pong_screen/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/music_screen/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/model/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/gui/src/gameover_screen/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/gui/src/gallery_screen/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/gui/src/common/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/generated/texts/src/subdir.mk
 -include TouchGFX/build/MINGW32_NT-6.2/generated/simulator/src/subdir.mk

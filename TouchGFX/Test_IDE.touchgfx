@@ -891,9 +891,9 @@
         "Components": [
           {
             "Color": {
-              "Red": 74,
-              "Green": 94,
-              "Blue": 92
+              "Red": 29,
+              "Green": 166,
+              "Blue": 152
             },
             "Alpha": 255,
             "Name": "bg",
@@ -935,8 +935,8 @@
             "RelativeFilename": "coolteam.png",
             "Alpha": 255,
             "Name": "image1",
-            "X": 90,
-            "Y": 60,
+            "X": 21,
+            "Y": 66,
             "Width": 300,
             "Height": 168,
             "Type": "Image",
@@ -950,9 +950,9 @@
             "TextId": "SingleUseId36",
             "TextRotation": "0",
             "Color": {
-              "Red": 14,
+              "Red": 255,
               "Green": 255,
-              "Blue": 120
+              "Blue": 255
             },
             "Alpha": 255,
             "AutoSize": true,
@@ -962,6 +962,29 @@
             "Y": 18,
             "Width": 104,
             "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId39",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea2",
+            "X": 329,
+            "Y": 76,
+            "Width": 141,
+            "Height": 84,
             "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
@@ -1087,6 +1110,10 @@
       },
       {
         "TextEntryId": "SingleUseId38",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId39",
         "IsResource": false
       }
     ],
