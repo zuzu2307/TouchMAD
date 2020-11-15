@@ -1,6 +1,5 @@
 #include "ControlMusic.h"
 
-
 #include "cmsis_os.h"
 #include "task.h"
 #include "queue.h"
@@ -8,8 +7,7 @@
 xQueueHandle music_msg_q;
 uint8_t msg;
 
-
-uint8_t isPlay=0;
+uint8_t isPlay = 0;
 
 //extern osSemaphoreId binarySemControlQHandle;
 
@@ -61,7 +59,6 @@ void signalOut(uint8_t controlSignal)
 		break;
 	}
 
-
 	HAL_GPIO_WritePin(N2_GPIO_Port, N2_Pin, n2_stat);
 	HAL_GPIO_WritePin(N1_GPIO_Port, N1_Pin, n1_stat);
 	HAL_GPIO_WritePin(N0_GPIO_Port, N0_Pin, n0_stat);
@@ -83,7 +80,6 @@ void PollingControlMusic()
 	}
 
 	isPlay = (GPIOB->IDR >> 14) & 0x01;
-
 
 	osDelay(1);
 }
