@@ -172,42 +172,6 @@
     <Filter Include="Header Files\generated\gui_generated\common">
       <UniqueIdentifier>D91A4B1C-D29F-8CD9-6525-659EA5069AD4</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\screen3_screen">
-      <UniqueIdentifier>6C32DAE8-DD22-590A-8458-C7F661802D91</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\screen2_screen">
-      <UniqueIdentifier>5DA90D36-0CF6-7577-90B5-B73626279550</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\screen2_screen">
-      <UniqueIdentifier>2A1E1AC6-FBAA-A11E-6F35-C71E14B97F1B</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\screen3_screen">
-      <UniqueIdentifier>CA9D3614-D84F-8DFF-0622-2849C7E3DA6E</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\screen1_screen">
-      <UniqueIdentifier>6848DFE5-D455-E3E3-5679-69CAC17B27FA</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\screen1_screen">
-      <UniqueIdentifier>35E81DC5-3A57-8543-D80E-F915238D5FE0</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen3_screen">
-      <UniqueIdentifier>E91E767D-33F1-9C59-AC1B-E3F4099CE88D</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen3_screen">
-      <UniqueIdentifier>14EC8B6E-E522-EC9E-4C4F-D0013DAACB31</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>C11E3F5A-3BEC-B4B6-35D1-40846953CCEC</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>B80DEE59-0507-92BC-C18D-965DE4268104</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen2_screen">
-      <UniqueIdentifier>8E6A78D0-B6B6-CE32-D5C7-D9EF73429D2C</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen2_screen">
-      <UniqueIdentifier>4487B0DF-34BF-C97D-5F4C-453474017749</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\pong_screen">
       <UniqueIdentifier>C5E68FC9-597C-0A29-A7EA-4602B74E3D35</UniqueIdentifier>
     </Filter>
@@ -219,6 +183,42 @@
     </Filter>
     <Filter Include="Header Files\generated\gui_generated\pong_screen">
       <UniqueIdentifier>317EBBBE-A27C-B0C9-C47A-27EB28566C2D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\music_screen">
+      <UniqueIdentifier>F99CE79C-4D97-841C-58FC-9CC807635B00</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\music_screen">
+      <UniqueIdentifier>AD76FCDF-03C1-9D54-7B60-91BBB1CE3C6B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\music_screen">
+      <UniqueIdentifier>5CD0A6C9-FCEF-234E-3118-BB24505D21A7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\music_screen">
+      <UniqueIdentifier>D4F109E7-4F79-05C7-CC72-46AFBD3C4FE0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\gameover_screen">
+      <UniqueIdentifier>90386267-481F-F268-D7EC-D3CB49EFBFE1</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\gameover_screen">
+      <UniqueIdentifier>C05A5C35-69B9-F03A-017A-590975CAA588</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\gameover_screen">
+      <UniqueIdentifier>497C2135-0813-D960-0343-1DF41B699110</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\gameover_screen">
+      <UniqueIdentifier>4E6CC42E-795E-7CF6-AC8D-75DECAA00418</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\gallery_screen">
+      <UniqueIdentifier>EA0522A5-3E85-F5FD-B192-B6140AA9CB57</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\gallery_screen">
+      <UniqueIdentifier>8E8CD1DF-6C13-E546-BCA6-2F0C87CE5A18</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\gallery_screen">
+      <UniqueIdentifier>023F78DF-3107-D427-A9C4-71E9BC343BD8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\gallery_screen">
+      <UniqueIdentifier>9E3B2F92-4921-D138-8498-ACCA8DD9BCB4</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -258,33 +258,6 @@
     <ClCompile Include="..\..\generated\gui_generated\src\screen_screen\screenViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen2_screen\Screen2Presenter.cpp">
-      <Filter>Source Files\gui\screen2_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen2_screen\Screen2View.cpp">
-      <Filter>Source Files\gui\screen2_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen2_screen\Screen2ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen2_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen3_screen\Screen3Presenter.cpp">
-      <Filter>Source Files\gui\screen3_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen3_screen\Screen3View.cpp">
-      <Filter>Source Files\gui\screen3_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen3_screen\Screen3ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen3_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\pong_screen\PongPresenter.cpp">
       <Filter>Source Files\gui\pong_screen</Filter>
     </ClCompile>
@@ -293,6 +266,33 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\pong_screen\PongViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\pong_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\music_screen\MusicPresenter.cpp">
+      <Filter>Source Files\gui\music_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\music_screen\MusicView.cpp">
+      <Filter>Source Files\gui\music_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\music_screen\MusicViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\music_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\gameover_screen\gameoverPresenter.cpp">
+      <Filter>Source Files\gui\gameover_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\gameover_screen\gameoverView.cpp">
+      <Filter>Source Files\gui\gameover_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\gameover_screen\gameoverViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\gameover_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\gallery_screen\galleryPresenter.cpp">
+      <Filter>Source Files\gui\gallery_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\gallery_screen\galleryView.cpp">
+      <Filter>Source Files\gui\gallery_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\gallery_screen\galleryViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\gallery_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -736,33 +736,6 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp">
       <Filter>Header Files\generated\gui_generated\common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2Presenter.hpp">
-      <Filter>Header Files\gui\screen2_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2View.hpp">
-      <Filter>Header Files\gui\screen2_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen2_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3Presenter.hpp">
-      <Filter>Header Files\gui\screen3_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3View.hpp">
-      <Filter>Header Files\gui\screen3_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen3_screen\Screen3ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen3_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\pong_screen\PongPresenter.hpp">
       <Filter>Header Files\gui\pong_screen</Filter>
     </ClInclude>
@@ -771,6 +744,33 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\pong_screen\PongViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\pong_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\music_screen\MusicPresenter.hpp">
+      <Filter>Header Files\gui\music_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\music_screen\MusicView.hpp">
+      <Filter>Header Files\gui\music_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\music_screen\MusicViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\music_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\gameover_screen\gameoverPresenter.hpp">
+      <Filter>Header Files\gui\gameover_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\gameover_screen\gameoverView.hpp">
+      <Filter>Header Files\gui\gameover_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gameover_screen\gameoverViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\gameover_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\gallery_screen\galleryPresenter.hpp">
+      <Filter>Header Files\gui\gallery_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\gallery_screen\galleryView.hpp">
+      <Filter>Header Files\gui\gallery_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\gallery_screen\galleryViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\gallery_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,7 @@ ModelListener.hpp:11:13:ModelListener::~ModelListener()	16	static
 ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	16	static
 PongPresenter.hpp:28:13:PongPresenter::~PongPresenter()	16	static
 PongPresenter.hpp:28:13:virtual PongPresenter::~PongPresenter()	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 PongPresenter.cpp:4:1:PongPresenter::PongPresenter(PongView&)	16	static
 PongPresenter.cpp:10:6:virtual void PongPresenter::activate()	16	static
 PongPresenter.cpp:15:6:virtual void PongPresenter::deactivate()	16	static

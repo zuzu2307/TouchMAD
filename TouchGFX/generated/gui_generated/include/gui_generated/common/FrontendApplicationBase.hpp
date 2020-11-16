@@ -20,14 +20,21 @@ public:
 
     void gotoscreenScreenSlideTransitionEast();
 
-    // Screen2
-    void gotoScreen2ScreenNoTransition();
+    void gotoscreenScreenCoverTransitionEast();
 
-    // Screen3
-    void gotoScreen3ScreenNoTransition();
+    // Music
+    void gotoMusicScreenNoTransition();
+
+    // gameover
+    void gotogameoverScreenNoTransition();
 
     // Pong
     void gotoPongScreenCoverTransitionEast();
+
+    void gotoPongScreenNoTransition();
+
+    // gallery
+    void gotogalleryScreenCoverTransitionEast();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -39,14 +46,21 @@ protected:
 
     void gotoscreenScreenSlideTransitionEastImpl();
 
-    // Screen2
-    void gotoScreen2ScreenNoTransitionImpl();
+    void gotoscreenScreenCoverTransitionEastImpl();
 
-    // Screen3
-    void gotoScreen3ScreenNoTransitionImpl();
+    // Music
+    void gotoMusicScreenNoTransitionImpl();
+
+    // gameover
+    void gotogameoverScreenNoTransitionImpl();
 
     // Pong
     void gotoPongScreenCoverTransitionEastImpl();
+
+    void gotoPongScreenNoTransitionImpl();
+
+    // gallery
+    void gotogalleryScreenCoverTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

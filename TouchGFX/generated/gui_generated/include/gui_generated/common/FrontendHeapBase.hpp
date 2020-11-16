@@ -10,25 +10,26 @@
 #include <touchgfx/transitions/NoTransition.hpp>
 #include <touchgfx/transitions/CoverTransition.hpp>
 
-
-
+#include <touchgfx/transitions/CoverTransition.hpp>
 
 
 #include <touchgfx/transitions/SlideTransition.hpp>
+
+#include <touchgfx/transitions/CoverTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
 #include <gui/screen_screen/screenView.hpp>
 #include <gui/screen_screen/screenPresenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
-#include <gui/screen2_screen/Screen2View.hpp>
-#include <gui/screen2_screen/Screen2Presenter.hpp>
-#include <gui/screen3_screen/Screen3View.hpp>
-#include <gui/screen3_screen/Screen3Presenter.hpp>
+#include <gui/music_screen/MusicView.hpp>
+#include <gui/music_screen/MusicPresenter.hpp>
+#include <gui/gameover_screen/gameoverView.hpp>
+#include <gui/gameover_screen/gameoverPresenter.hpp>
 #include <gui/pong_screen/PongView.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
+#include <gui/gallery_screen/galleryView.hpp>
+#include <gui/gallery_screen/galleryPresenter.hpp>
 
 
 /**
@@ -52,10 +53,10 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< screenView,
-            touchgfx::meta::TypeList< Screen1View,
-            touchgfx::meta::TypeList< Screen2View,
-            touchgfx::meta::TypeList< Screen3View,
+            touchgfx::meta::TypeList< MusicView,
+            touchgfx::meta::TypeList< gameoverView,
             touchgfx::meta::TypeList< PongView,
+            touchgfx::meta::TypeList< galleryView,
             touchgfx::meta::Nil > > > >
             > GeneratedViewTypes;
 
@@ -69,10 +70,10 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< screenPresenter,
-            touchgfx::meta::TypeList< Screen1Presenter,
-            touchgfx::meta::TypeList< Screen2Presenter,
-            touchgfx::meta::TypeList< Screen3Presenter,
+            touchgfx::meta::TypeList< MusicPresenter,
+            touchgfx::meta::TypeList< gameoverPresenter,
             touchgfx::meta::TypeList< PongPresenter,
+            touchgfx::meta::TypeList< galleryPresenter,
             touchgfx::meta::Nil > > > >
             > GeneratedPresenterTypes;
 

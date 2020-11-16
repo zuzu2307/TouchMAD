@@ -7,12 +7,16 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/pong_screen/PongPresenter.hpp>
-#include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB888.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
-#include <touchgfx/widgets/RepeatButton.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/ButtonWithIcon.hpp>
+#include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/mixins/Draggable.hpp>
+#include <touchgfx/EasingEquations.hpp>
+#include <touchgfx/mixins/MoveAnimator.hpp>
 
 class PongViewBase : public touchgfx::View<PongPresenter>
 {
@@ -20,19 +24,6 @@ public:
     PongViewBase();
     virtual ~PongViewBase() {}
     virtual void setupScreen();
-
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void move_left()
-    {
-        // Override and implement this function in Pong
-    }
-
-    virtual void move_right()
-    {
-        // Override and implement this function in Pong
-    }
 
 protected:
     FrontendApplication& application() {
@@ -42,15 +33,19 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::Box background;
-    touchgfx::Circle ball;
+    touchgfx::Image image1;
+    touchgfx::MoveAnimator< touchgfx::Circle > ball;
     touchgfx::PainterRGB888 ballPainter;
-    touchgfx::Box paddle1;
-    touchgfx::ButtonWithLabel back_button;
-    touchgfx::RepeatButton left_button;
-    touchgfx::RepeatButton right_button;
-    touchgfx::TextArea textArea1;
-    touchgfx::TextArea textArea1_1;
+    touchgfx::Draggable< touchgfx::Box > paddle1;
+    touchgfx::TextAreaWithOneWildcard score;
+    touchgfx::ButtonWithIcon Back_Button;
+    touchgfx::Button button1;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t SCORE_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar scoreBuffer[SCORE_SIZE];
 
 private:
 

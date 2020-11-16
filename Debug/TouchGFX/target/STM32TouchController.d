@@ -4,8 +4,8 @@ TouchGFX/target/STM32TouchController.o: \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
- D:/project/STM32/MAD/workspace/Test_IDE/STM32746G-Discovery/stm32746g_discovery_ts.h \
- D:/project/STM32/MAD/workspace/Test_IDE/STM32746G-Discovery/stm32746g_discovery.h \
+ D:/Downloads/MAD/Touch_GFX_projects/Test_IDE/STM32746G-Discovery/stm32746g_discovery_ts.h \
+ D:/Downloads/MAD/Touch_GFX_projects/Test_IDE/STM32746G-Discovery/stm32746g_discovery.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  ../Core/Inc/stm32f7xx_hal_conf.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
@@ -46,17 +46,13 @@ TouchGFX/target/STM32TouchController.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
- d:\project\stm32\mad\workspace\test_ide\components\ft5336\ft5336.h \
- d:\project\stm32\mad\workspace\test_ide\components\common\ts.h \
+ d:\downloads\mad\touch_gfx_projects\test_ide\components\ft5336\ft5336.h \
+ d:\downloads\mad\touch_gfx_projects\test_ide\components\common\ts.h \
  ../TouchGFX/target/TouchGFXHAL.hpp \
  ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
@@ -84,7 +80,7 @@ TouchGFX/target/STM32TouchController.o: \
  ../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp \
- D:/project/STM32/MAD/workspace/Test_IDE/Components/ft5336/ft5336.h
+ D:/Downloads/MAD/Touch_GFX_projects/Test_IDE/Components/ft5336/ft5336.h
 
 ../TouchGFX/target/STM32TouchController.hpp:
 
@@ -94,9 +90,9 @@ TouchGFX/target/STM32TouchController.o: \
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp:
 
-D:/project/STM32/MAD/workspace/Test_IDE/STM32746G-Discovery/stm32746g_discovery_ts.h:
+D:/Downloads/MAD/Touch_GFX_projects/Test_IDE/STM32746G-Discovery/stm32746g_discovery_ts.h:
 
-D:/project/STM32/MAD/workspace/Test_IDE/STM32746G-Discovery/stm32746g_discovery.h:
+D:/Downloads/MAD/Touch_GFX_projects/Test_IDE/STM32746G-Discovery/stm32746g_discovery.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 
@@ -178,15 +174,7 @@ D:/project/STM32/MAD/workspace/Test_IDE/STM32746G-Discovery/stm32746g_discovery.
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h:
 
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h:
-
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h:
-
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h:
-
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h:
-
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h:
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 
@@ -196,9 +184,9 @@ D:/project/STM32/MAD/workspace/Test_IDE/STM32746G-Discovery/stm32746g_discovery.
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
 
-d:\project\stm32\mad\workspace\test_ide\components\ft5336\ft5336.h:
+d:\downloads\mad\touch_gfx_projects\test_ide\components\ft5336\ft5336.h:
 
-d:\project\stm32\mad\workspace\test_ide\components\common\ts.h:
+d:\downloads\mad\touch_gfx_projects\test_ide\components\common\ts.h:
 
 ../TouchGFX/target/TouchGFXHAL.hpp:
 
@@ -254,4 +242,4 @@ d:\project\stm32\mad\workspace\test_ide\components\common\ts.h:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp:
 
-D:/project/STM32/MAD/workspace/Test_IDE/Components/ft5336/ft5336.h:
+D:/Downloads/MAD/Touch_GFX_projects/Test_IDE/Components/ft5336/ft5336.h:
